@@ -1,6 +1,40 @@
 {
   "projects": [
     {
+      "id": 6,
+      "name": "Git List",
+      "tech_tags": ["CSS", "HTML", "React"],
+      "cover": "/images/git-list.png",
+      "description": "Maneja los repositorios de tus proyectos como todo un profesional utilizando GitList, la plataforma de desarrollo más grande y avanzada del mundo.",
+      "url_repo": "https://github.com/AlecANL/git-list",
+      "live_demo": "https://git-list.vercel.app/",
+      "screenshots": [],
+      "is_completed": true
+    },
+    {
+      "id": 7,
+      "name": "All Notes",
+      "tech_tags": ["CSS", "HTML", "React"],
+      "cover": "/images/all-notes.png",
+      "description": "Aplicación que te ayudará a escribir tus notas en formato MarkDown y ver como lucirá en tiempo real.",
+      "url_repo": "https://github.com/AlecANL/all-notes",
+      "live_demo": "https://all-notes-v1.vercel.app/",
+      "screenshots": [],
+      "is_completed": true
+    },
+    {
+      "id": 8,
+      "name": "Juego Piedra Papel o Tijera",
+      "tech_tags": ["CSS", "HTML", "React"],
+      "cover": "/images/rps.png",
+      "description": "Puedes elegir el modo de juego. Fácil: el clásico piedra, papel, o tijera. Avanzado: piedra, papel, tijera, spoke o lagarto.",
+      "url_repo": "https://github.com/AlecANL/game-rock-pasper-scissor",
+      "live_demo": "https://game-rock-paper-scissor.vercel.app/",
+      "screenshots": [],
+      "is_completed": true
+    },
+
+    {
       "id": 1,
       "name": "job listings",
       "tech_tags": ["CSS", "HTML", "React"],
@@ -11,6 +45,7 @@
       "screenshots": [],
       "is_completed": true
     },
+
     {
       "id": 2,
       "name": "Social Media Dashboard",

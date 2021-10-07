@@ -31,7 +31,10 @@ function Hero() {
             </p>
           </div>
           <button className={ctx(style.hero__button, style.is__blue)}>
-            <a href="/cv.pdf" download="alexei_cv.pdf">
+            <a
+              href="https://drive.google.com/file/d/16RgjHal2VO00BRgrw5ld7MtSWDIvWpUt/view?usp=sharing"
+              download="alexei_cv.pdf"
+            >
               Descargar currículum
             </a>
           </button>

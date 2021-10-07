@@ -13,6 +13,7 @@
 }
 .card__cover img {
   max-inline-size: 100%;
+  border-radius: 0.5rem;
   object-fit: cover;
 }
 .project__description {

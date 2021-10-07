@@ -11,7 +11,7 @@ function Contact() {
           </h3>
           <span className={styles.contact__mail}>
             <Link href="mailto:alexeialvarez4@gmail.com">
-              <a>alexeialvarez4@gmail.com</a>
+              <a>@alexeialvarez</a>
             </Link>
           </span>
         </div>

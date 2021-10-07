@@ -10,7 +10,7 @@ function Navigation({ isOpenMenu }) {
             <a>hola</a>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/projects">
             <a>proyectos</a>
           </Link>
@@ -24,7 +24,7 @@ function Navigation({ isOpenMenu }) {
           <Link href="#contact">
             <a>contacto</a>
           </Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
