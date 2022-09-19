@@ -17,7 +17,7 @@ export function useDarkMode() {
 
   React.useEffect(() => {
     const currentTheme = localStorage.getItem('theme') as TTheme
-    currentTheme ? setTheme(currentTheme) : setMode(ETheme.LIGHT)
+    currentTheme ? setTheme(currentTheme) : setMode(ETheme.DARK)
   }, [])
 
   return {

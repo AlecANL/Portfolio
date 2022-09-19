@@ -7,23 +7,26 @@ declare module 'styled-components' {
     logan: string
     'just-orange': string
     'just-pink': string
+    'light-blue': string
   }
 }
 
 export const lightTheme = {
-  'body-color': '#201D28',
+  'body-color': '#ffff',
   'just-white': '#fff',
   logan: '#A9ADC1',
-  'just-orange': '#F77062',
-  'just-pink': '#FE5196',
+  'just-orange': '#ffff',
+  'just-pink': '#ffff',
+  'light-blue': '#3da9fc',
 }
 
 export const darkTheme = {
-  'body-color': '#201D28',
+  'body-color': '#201d28',
   'just-white': '#fff',
-  logan: '#A9ADC1',
-  'just-orange': '#F77062',
-  'just-pink': '#FE5196',
+  logan: '#a9adc1',
+  'just-orange': '#f77062',
+  'just-pink': '#fe5196',
+  'light-blue': '#3da9fc',
 }
 
 export const GlobalStyled = createGlobalStyle`

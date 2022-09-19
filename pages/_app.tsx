@@ -14,11 +14,13 @@ export const AppContext = createContext(null)
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
-  const { theme } = useDarkMode()
+  const { theme, toggleTheme } = useDarkMode()
   const currentTheme = theme === ETheme.LIGHT ? lightTheme : darkTheme
 
   const value = {
     language: router.locale,
+    toggleTheme,
+    theme,
   }
 
   return (

@@ -1,10 +1,12 @@
 .navigation {
   position: fixed;
   background-color: var(--bg-overlay);
+  background-color: background;
   inset-inline: 0;
   inset-block-start: 3.75rem;
   inset-block-end: 0;
   visibility: hidden;
+  z-index: 99;
   transition: visibility 0.2s ease-out;
   /* pointer-events: none; */
 }
@@ -30,6 +32,7 @@
 }
 .navigation__list a {
   text-transform: uppercase;
+  font-size: 14px;
 }
 @media screen and (min-width: 768px) {
   .navigation {

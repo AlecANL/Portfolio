@@ -8,14 +8,15 @@ import menuEs from '@i18n/menu-es.json'
 import menuJson from '@data/menu.json'
 
 import { IMenuNavigation } from '@models/menu'
+import { NavigationListStyled, NavigationStyled } from './navigation.styled'
 
 function Navigation({ isOpenMenu }) {
   const { currentLanguage } = useLanguage(menuEn, menuEs)
   const navMenu: IMenuNavigation[] = menuJson
 
   return (
-    <nav className={`${styled.navigation} ${isOpenMenu && styled.is_active}`}>
-      <ul className={styled.navigation__list}>
+    <NavigationStyled isOpen={isOpenMenu}>
+      <NavigationListStyled isOpen={isOpenMenu}>
         {navMenu.map(menuItem => (
           <li key={menuItem.id}>
             <Link href={menuItem.url}>
@@ -23,8 +24,8 @@ function Navigation({ isOpenMenu }) {
             </Link>
           </li>
         ))}
-      </ul>
-    </nav>
+      </NavigationListStyled>
+    </NavigationStyled>
   )
 }
 
