@@ -1,12 +1,21 @@
 import { createContext } from 'react'
+
 import Header from '../components/header/header'
-import '../styles/globals.css'
+
 import { useRouter } from 'next/router'
+import { useDarkMode } from '@hooks/useDarkMode'
+
+import { lightTheme, darkTheme, GlobalStyled } from '../styles/globals'
+
+import { ETheme } from '../models/general.enum'
+import { ThemeProvider } from 'styled-components'
 
 export const AppContext = createContext(null)
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
+  const { theme } = useDarkMode()
+  const currentTheme = theme === ETheme.LIGHT ? lightTheme : darkTheme
 
   const value = {
     language: router.locale,
@@ -15,8 +24,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <AppContext.Provider value={value}>
-        <Header />
-        <Component {...pageProps} />
+        <ThemeProvider theme={currentTheme}>
+          <GlobalStyled />
+          <Header />
+          <Component {...pageProps} />
+        </ThemeProvider>
       </AppContext.Provider>
     </>
   )

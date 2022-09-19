@@ -1,13 +1,16 @@
 [
   {
+    "id": 1,
     "name": "menu_projects",
     "url": "/projects"
   },
   {
+    "id": 2,
     "name": "menu_about",
     "url": "#about"
   },
   {
+    "id": 3,
     "name": "menu_contact",
     "url": "#contact"
   }

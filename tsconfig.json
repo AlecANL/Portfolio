@@ -5,7 +5,9 @@
     "baseUrl": ".",
     "paths": {
       "@i18n/*": ["./public/assets/i18n/*"],
-      "@data/*": ["./public/assets/data/*"]
+      "@data/*": ["./public/assets/data/*"],
+      "@models/*": ["./models/*"],
+      "@hooks/*": ["./hooks/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,
