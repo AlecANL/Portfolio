@@ -1,0 +1,14 @@
+[
+  {
+    "name": "menu_projects",
+    "url": "/projects"
+  },
+  {
+    "name": "menu_about",
+    "url": "#about"
+  },
+  {
+    "name": "menu_contact",
+    "url": "#contact"
+  }
+]

@@ -5,12 +5,6 @@ import Hero from '../components/hero/hero'
 import ListProject from '../components/projects/list-project/list-project'
 import styles from '../styles/Home.module.css'
 
-import styled from 'styled-components'
-
-export const Compo = styled.div`
-  color: red;
-`
-
 export default function Home() {
   return (
     <>
@@ -21,10 +15,6 @@ export default function Home() {
       </Head>
       <Hero />
       <main className={styles.main}>
-        <Compo>hello world</Compo>
-        <Compo>hello world</Compo>
-        <Compo>hello world</Compo>
-        <Compo>hello world</Compo>
         <div className='wrapper'>
           <div className={styles.main__content}>
             <ListProject />
