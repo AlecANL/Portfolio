@@ -4,8 +4,8 @@ import { useLanguage } from '../../hooks/useLanguage'
 
 import { NavigationListStyled, NavigationStyled } from './navigation.styled'
 
-import menuEn from '@i18n/menu-en.json'
-import menuEs from '@i18n/menu-es.json'
+import menuEn from '@i18n/common/common-en.json'
+import menuEs from '@i18n/common/common-es.json'
 import menuJson from '@data/menu.json'
 
 import { IMenuNavigation } from '@models/menu'

@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Contact from '../components/contact/contact'
 import Footer from '../components/footer/footer'
-import Hero from '../components/hero/hero'
+import { Hero } from '../components/hero/hero'
 import ListProject from '../components/projects/list-project/list-project'
 import styles from '../styles/Home.module.css'
 

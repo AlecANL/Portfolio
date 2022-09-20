@@ -1,0 +1,10 @@
+{
+  "menu_projects": "projects",
+  "menu_contact": "contact",
+  "menu_cv": "cv",
+  "menu_about": "about",
+  "copy:hello_world": "👋 Hello World!!",
+  "copy:name": "I'm Alexei Alvarez",
+  "copy:position": "Frontend Developer",
+  "copy:about": "I am a Frontend, focused on creating digital products that inspire and engage people."
+}

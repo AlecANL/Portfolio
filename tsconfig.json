@@ -7,7 +7,10 @@
       "@i18n/*": ["./public/assets/i18n/*"],
       "@data/*": ["./public/assets/data/*"],
       "@models/*": ["./models/*"],
-      "@hooks/*": ["./hooks/*"]
+      "@hooks/*": ["./hooks/*"],
+      "@atoms/*": ["./components/atoms/*"],
+      "@molecules/*": ["./components/molecules/*"],
+      "@layout/*": ["./components/layout/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,
