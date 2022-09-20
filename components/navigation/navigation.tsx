@@ -1,14 +1,14 @@
 import Link from 'next/link'
-import styled from './navigation.module.css'
 
 import { useLanguage } from '../../hooks/useLanguage'
+
+import { NavigationListStyled, NavigationStyled } from './navigation.styled'
 
 import menuEn from '@i18n/menu-en.json'
 import menuEs from '@i18n/menu-es.json'
 import menuJson from '@data/menu.json'
 
 import { IMenuNavigation } from '@models/menu'
-import { NavigationListStyled, NavigationStyled } from './navigation.styled'
 
 function Navigation({ isOpenMenu }) {
   const { currentLanguage } = useLanguage(menuEn, menuEs)

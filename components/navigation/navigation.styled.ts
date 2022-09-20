@@ -29,7 +29,8 @@ export const NavigationStyled = styled.nav<INavigationStyled>`
 
 export const NavigationListStyled = styled.ul<INavigationStyled>`
   li {
-    padding: 1rem;
+    display: flex;
+    align-items: center;
     color: var(--secondary);
   }
 
@@ -43,8 +44,14 @@ export const NavigationListStyled = styled.ul<INavigationStyled>`
   will-change: transform;
 
   a {
+    padding-inline: 1.5rem;
+    padding-block: 12px;
     text-transform: uppercase;
-    font-size: 14px;
+    font: var(--font-menu);
+  }
+
+  a:hover {
+    color: ${({ theme }) => theme['just-white']};
   }
 
   ${props =>

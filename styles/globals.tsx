@@ -86,6 +86,12 @@ export const GlobalStyled = createGlobalStyle`
 --body2-mobile: 400 1rem/normal Lato; 
 --body3-mobile: 400 0.75rem/normal Lato; 
 
+--heading2-mobile: 700 1.75rem/2.125rem palaquinDark; 
+--heading3-mobile: 700 1.375rem/1.5rem palaquinDark; 
+--heading1-mobile: 700 2.25rem/2.8125rem palaquinDark; 
+
+--font-menu: 700 18px/20px palaquinDark; 
+
 --body3-regular-tablet: 400 1rem/normal Lato; 
 --body2-regular-tablet: 400 1rem/normal Lato; 
 --body1-regular-tablet: 400 1.25rem/normal Lato; 

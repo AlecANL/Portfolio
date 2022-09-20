@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 export const LanguageSwitchContainerStyled = styled.button`
-  outline: 1px solid red;
+  inline-size: 40px;
+  block-size: 40px;
   padding: 0;
+  border: none;
   background-color: unset;
-  border-color: transparent;
 `

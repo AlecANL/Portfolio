@@ -15,7 +15,7 @@ export function LanguageSwitch() {
   return (
     <>
       <LanguageSwitchContainerStyled>
-        <Image width={55} height={38} src={currentIconFlag} alt='current flag' />
+        <Image width={40} height={40} src={currentIconFlag} alt='current flag' />
       </LanguageSwitchContainerStyled>
     </>
   )

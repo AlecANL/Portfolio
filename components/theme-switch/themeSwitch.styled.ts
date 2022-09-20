@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 export const ThemeSwitchStyled = styled.button`
-  outline: 1px solid red;
+  inline-size: 40px;
+  block-size: 40px;
   background-color: unset;
-  border-color: transparent;
+  border: none;
   padding: 0;
 `

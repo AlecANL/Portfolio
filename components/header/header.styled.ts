@@ -3,13 +3,16 @@ import styled from 'styled-components'
 export const HeaderStyled = styled.header`
   position: sticky;
   inset-block-start: 0;
-  outline: 1px solid blue;
   padding-inline: 0.5rem;
   padding-block: 1rem;
   display: flex;
   align-items: center;
   background-color: ${({ theme }) => theme['body-color']};
   z-index: 99;
+
+  @media screen and (min-width: 375px) {
+    padding-inline: 1.5rem;
+  }
 `
 
 export const HeaderNavContent = styled.div`
@@ -22,15 +25,17 @@ export const HeaderNavContent = styled.div`
 export const HeaderContent = styled.div`
   display: flex;
   align-items: center;
-
-  @media screen and (min-width: 768px) {
-    justify-content: space-between;
-  }
+  justify-content: space-between;
 `
 
 export const HeaderWidgetContent = styled.div`
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+
+  @media screen and (min-width: 768px) {
+    gap: 1rem;
+  }
 `
 
 interface ISome {
@@ -39,10 +44,9 @@ interface ISome {
 
 export const HeaderIconMenu = styled.div<ISome>`
   position: relative;
-  inline-size: 1.7rem;
-  block-size: 1rem;
+  inline-size: 40px;
+  block-size: 40px;
   cursor: pointer;
-  outline: 1px solid red;
   .line {
     position: absolute;
     inset-block-start: 50%;
