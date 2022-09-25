@@ -82,9 +82,9 @@ export const GlobalStyled = createGlobalStyle`
 }
 
 :root {
---body1-mobile: 400 1.125rem/normal Lato; 
---body2-mobile: 400 1rem/normal Lato; 
---body3-mobile: 400 0.75rem/normal Lato; 
+--body1-mobile: 400 1.125rem/normal lato; 
+--body2-mobile: 400 1rem/normal lato; 
+--body3-mobile: 400 0.75rem/normal lato; 
 
 --heading2-mobile: 700 1.75rem/2.125rem palaquinDark; 
 --heading3-mobile: 700 1.375rem/1.5rem palaquinDark; 
@@ -92,13 +92,27 @@ export const GlobalStyled = createGlobalStyle`
 
 --font-menu: 700 18px/20px palaquinDark; 
 
---body3-regular-tablet: 400 1rem/normal Lato; 
---body2-regular-tablet: 400 1rem/normal Lato; 
---body1-regular-tablet: 400 1.25rem/normal Lato; 
+--body3-regular-tablet: 400 1rem/normal lato; 
+--body2-regular-tablet: 400 1rem/normal lato; 
+--body1-regular-tablet: 400 1.25rem/normal lato; 
 
---body1-regular-desktop: 400 1.5rem/normal Lato; 
---body2-regular-desktop: 400 1.125rem/normal Lato; 
---body3-regular-desktop: 400 1rem/normal Lato; 
+--heading2-tablet: 700 1.875rem/normal palaquinDark; 
+--heading3-tablet: 700 1.25rem/normal palaquinDark; 
+--heading1-tablet: 700 2.5rem/normal palaquinDark; 
+
+--body1-regular-desktop: 400 1.5rem/normal lato; 
+--body2-regular-desktop: 400 1.125rem/normal lato; 
+--body3-regular-desktop: 400 1rem/normal lato; 
+
+--heading1-desktop: 700 3rem/3.75rem palaquinDark; 
+--heading2-desktop: 700 2.25rem/2.375rem palaquinDark; 
+--heading3-desktop: 700 1.5rem/normal palaquinDark; 
+
+--button-regular-desktop: 400 1.125rem/normal lato; 
+--button-bold-desktop: 700 1.125rem/normal lato; 
+
+--button-regular-mobile: 400 1.125rem/normal Lato; 
+--button-bold-mobile: 700 1.125rem/normal Lato; 
 }
 
 
@@ -107,10 +121,13 @@ html,
 body {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
   background-color: ${({ theme }) => theme['body-color']};
   color: ${({ theme }) => theme.logan};
   font: var(--body1-mobile);
-  scroll-behavior: smooth;
 }
 
 a {

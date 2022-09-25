@@ -6,5 +6,6 @@
   "copy:hello_world": "👋 Hello World!!",
   "copy:name": "I'm Alexei Alvarez",
   "copy:position": "Frontend Developer",
-  "copy:about": "I am a Frontend, focused on creating digital products that inspire and engage people."
+  "copy:about": "I am a Frontend, focused on creating digital products that inspire and engage people.",
+  "downloadPDf": "download CV"
 }

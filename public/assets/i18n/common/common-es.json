@@ -6,5 +6,6 @@
   "copy:hello_world": "👋 Hola mundo",
   "copy:name": "Soy Alexei Alvarez",
   "copy:position": "Frontend Developer",
-  "copy:about": "Soy un Frontend, centrado en la creación de productos digitales, que inspiran y atraen a las personas."
+  "copy:about": "Soy un Frontend, centrado en la creación de productos digitales, que inspiran y atraen a las personas.",
+  "downloadPDf": "descargar CV"
 }
