@@ -130,6 +130,18 @@ body {
   font: var(--body1-mobile);
 }
 
+  body::-webkit-scrollbar {
+    width: 10px;
+  }
+  body::-webkit-scrollbar-track {
+    background-color: #efefef;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #999999;
+    border-radius: 10px;
+    block-size: 3.125rem;
+  }
+
 a {
   color: inherit;
   text-decoration: none;

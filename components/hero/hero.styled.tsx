@@ -13,5 +13,6 @@ export const HeroStyled = styled.div`
   @media screen and (min-width: 1024px) {
     flex-direction: row;
     justify-content: space-between;
+    margin-block: 2rem;
   }
 `
