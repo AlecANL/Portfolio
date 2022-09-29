@@ -7,5 +7,10 @@
   "copy:name": "I'm Alexei Alvarez",
   "copy:position": "Frontend Developer",
   "copy:about": "I am a Frontend, focused on creating digital products that inspire and engage people.",
-  "downloadPDf": "download CV"
+  "downloadPDf": "download CV",
+  "link:live-demo": "live demo",
+  "link:code": "code",
+  "title:projects": "projects",
+  "title:all_notes": "all notes",
+  "project:all_notes": "Fully planned, designed and developed agency website. Contains functional, unique, step by step budget builder to help clients get better custom solutions that fit their needs."
 }

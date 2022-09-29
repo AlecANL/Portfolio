@@ -2,8 +2,11 @@ import Head from 'next/head'
 import Contact from '../components/contact/contact'
 import Footer from '../components/footer/footer'
 import { Hero } from '../components/hero/hero'
-import ListProject from '../components/projects/list-project/list-project'
 import styles from '../styles/Home.module.css'
+
+import projectListJson from '@data/projects-home.json'
+import { Wrapper } from 'components/wrapper/wrapper'
+import { ProjectSection } from '@layout/project-section'
 
 export default function Home() {
   return (
@@ -14,12 +17,10 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Hero />
-      <main className={styles.main}>
-        <div className='wrapper'>
-          <div className={styles.main__content}>
-            <ListProject />
-          </div>
-        </div>
+      <main>
+        <Wrapper>
+          <ProjectSection projects={projectListJson} />
+        </Wrapper>
       </main>
       <Contact />
       <Footer />
