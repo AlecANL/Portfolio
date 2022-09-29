@@ -8,6 +8,8 @@ declare module 'styled-components' {
     'just-orange': string
     'just-pink': string
     'light-blue': string
+    'dark-grey': string
+    'black-currant': string
   }
 }
 
@@ -18,6 +20,8 @@ export const lightTheme = {
   'just-orange': '#ffff',
   'just-pink': '#ffff',
   'light-blue': '#3da9fc',
+  'dark-grey': '#2b313b',
+  'black-currant': '#2f2d39',
 }
 
 export const darkTheme = {
@@ -27,6 +31,8 @@ export const darkTheme = {
   'just-orange': '#f77062',
   'just-pink': '#fe5196',
   'light-blue': '#3da9fc',
+  'dark-grey': '#2b313b',
+  'black-currant': '#2f2d39',
 }
 
 export const GlobalStyled = createGlobalStyle`

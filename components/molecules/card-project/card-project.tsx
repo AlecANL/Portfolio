@@ -3,7 +3,7 @@ import { Heading } from '@atoms/heading'
 import { Paragraph } from '@atoms/paragraph'
 import { CustomLink } from '@atoms/link'
 
-import { CardProjectButtons, CardProjectDescription, CardProjectStyled, CardTagContent } from './card-project.styled'
+import { CardProjectButtons, CardProjectDescription, CardProjectStyled, CardTagContent, PatternImage } from './card-project.styled'
 
 import { useLanguage } from '@hooks/useLanguage'
 
@@ -12,6 +12,8 @@ import es from '@i18n/common/common-es.json'
 
 import { ICardProjectProps } from '@models/project.interface'
 import { TechTag } from '@atoms/tech-tag'
+
+import patternImage from '/public/assets/images/circle-pattern.png'
 
 export function CardProject(props: ICardProjectProps) {
   const { cover, repository, demo, title, description, tagStack, id } = props ?? {}
@@ -24,6 +26,7 @@ export function CardProject(props: ICardProjectProps) {
   return (
     <>
       <CardProjectStyled>
+        <PatternImage src={patternImage.src} alt='pattern circles' />
         <Image
           src={cover.url}
           alt={`${currentLanguage[title]} cover for project`}
@@ -41,8 +44,12 @@ export function CardProject(props: ICardProjectProps) {
             ))}
           </CardTagContent>
           <CardProjectButtons>
-            <CustomLink url={repository}>{currentLanguage['link:code']}</CustomLink>
-            <CustomLink url={demo}>{currentLanguage['link:live-demo']}</CustomLink>
+            <CustomLink className='primary' url={repository}>
+              {currentLanguage['link:code']}
+            </CustomLink>
+            <CustomLink className='secondary' url={demo}>
+              {currentLanguage['link:live-demo']}
+            </CustomLink>
           </CardProjectButtons>
         </CardProjectDescription>
       </CardProjectStyled>
