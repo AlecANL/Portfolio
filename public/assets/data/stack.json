@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "icon": "/assets/icons/bg-stack/bg-angular-icon.svg",
+    "name": "angular"
+  },
+  {
+    "id": 2,
+    "icon": "/assets/icons/bg-stack/bg-css-icon.svg",
+    "name": "css"
+  },
+  {
+    "id": 3,
+    "icon": "/assets/icons/bg-stack/bg-html-icon.svg",
+    "name": "html"
+  },
+  {
+    "id": 4,
+    "icon": "/assets/icons/bg-stack/bg-javascript-icon.svg",
+    "name": "javascript"
+  },
+  {
+    "id": 5,
+    "icon": "/assets/icons/bg-stack/bg-react-icon.svg",
+    "name": "react"
+  },
+  {
+    "id": 6,
+    "icon": "/assets/icons/bg-stack/bg-tailwind-icon.svg",
+    "name": "tailwind"
+  }
+]
