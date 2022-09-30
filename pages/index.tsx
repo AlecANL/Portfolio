@@ -7,6 +7,7 @@ import styles from '../styles/Home.module.css'
 import projectListJson from '@data/projects-home.json'
 import { Wrapper } from 'components/wrapper/wrapper'
 import { ProjectSection } from '@layout/project-section'
+import { AboutSection } from '@layout/about-section'
 
 export default function Home() {
   return (
@@ -20,10 +21,9 @@ export default function Home() {
       <main>
         <Wrapper>
           <ProjectSection projects={projectListJson} />
+          <AboutSection />
         </Wrapper>
       </main>
-      <Contact />
-      <Footer />
     </>
   )
 }

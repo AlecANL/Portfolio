@@ -162,6 +162,10 @@ a {
   margin: auto;
 }
 
+  main {
+    padding-inline: 1.5rem;
+  }
+
 @media screen and (min-width: 64rem) {
     body {
         font: var(--body1-regular-desktop);

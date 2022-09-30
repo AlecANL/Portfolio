@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
 export const ProjectSectionStyled = styled.section`
-  padding-inline: 1.5rem;
-
   article:nth-child(even) {
     & > img {
       inset-block-start: -20px;

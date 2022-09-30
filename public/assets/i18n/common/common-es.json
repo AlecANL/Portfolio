@@ -7,10 +7,12 @@
   "copy:name": "Soy Alexei Alvarez",
   "copy:position": "Frontend Developer",
   "copy:about": "Soy un Frontend, centrado en la creación de productos digitales, que inspiran y atraen a las personas.",
+  "project:all_notes": "Fully planned, designed and developed agency website. Contains functional, unique, step by step budget builder to help clients get better custom solutions that fit their needs.",
+  "description:about": "Me llamo Alexei.  Soy Frontend Developer, y actualmente resido en Guatemala. Amo todo lo referente al desarrollo web, actualmente me especializo en el area del Frontend, y me gusta estar en constante aprendizaje. Me gusta aprender nuevas  tecnologías, patrones, soluciones, etc. Todo aquello que  genere mejores experiencias y mayor impacto en las personas. ",
   "downloadPDf": "descargar CV",
   "link:live-demo": "Demo",
   "link:code": "Código",
   "title:projects": "proyectos",
   "title:all_notes": "all notes",
-  "project:all_notes": "Fully planned, designed and developed agency website. Contains functional, unique, step by step budget builder to help clients get better custom solutions that fit their needs."
+  "title:about": "sobre mi"
 }
