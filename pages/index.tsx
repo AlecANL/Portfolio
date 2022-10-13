@@ -6,6 +6,7 @@ import { Wrapper } from 'components/wrapper/wrapper'
 import { ProjectSection } from '@layout/project-section'
 import { AboutSection } from '@layout/about-section'
 import { StackSection } from '@layout/stack-section'
+import { ContactSection } from '@layout/contact-section'
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
           <ProjectSection projects={projectListJson} />
           <AboutSection />
           <StackSection />
+          <ContactSection />
         </Wrapper>
       </main>
     </>

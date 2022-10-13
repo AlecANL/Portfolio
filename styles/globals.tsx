@@ -10,6 +10,7 @@ declare module 'styled-components' {
     'light-blue': string
     'dark-grey': string
     'black-currant': string
+    'soft-gray': string
   }
 }
 
@@ -22,6 +23,7 @@ export const lightTheme = {
   'light-blue': '#3da9fc',
   'dark-grey': '#2b313b',
   'black-currant': '#2f2d39',
+  'soft-gray': '#a4a4a4',
 }
 
 export const darkTheme = {
@@ -33,6 +35,7 @@ export const darkTheme = {
   'light-blue': '#3da9fc',
   'dark-grey': '#2b313b',
   'black-currant': '#2f2d39',
+  'soft-gray': '#a4a4a4',
 }
 
 export const GlobalStyled = createGlobalStyle`

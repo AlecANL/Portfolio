@@ -9,11 +9,17 @@
   "copy:about": "Soy un Frontend, centrado en la creación de productos digitales, que inspiran y atraen a las personas.",
   "project:all_notes": "Fully planned, designed and developed agency website. Contains functional, unique, step by step budget builder to help clients get better custom solutions that fit their needs.",
   "description:about": "Me llamo Alexei.  Soy Frontend Developer, y actualmente resido en Guatemala. Amo todo lo referente al desarrollo web, actualmente me especializo en el area del Frontend, y me gusta estar en constante aprendizaje. Me gusta aprender nuevas  tecnologías, patrones, soluciones, etc. Todo aquello que  genere mejores experiencias y mayor impacto en las personas. ",
+  "description:contact": "Hola 👋,  Muchas gracias por tomarte el tiempo, leerme, y llegar hasta acá, si te interesa mi perfil  no dudes en enviarme un email. ",
   "downloadPDf": "descargar CV",
   "link:live-demo": "Demo",
   "link:code": "Código",
   "title:projects": "proyectos",
   "title:all_notes": "all notes",
   "title:about": "sobre mi",
-  "title:stack": "Mi stack"
+  "title:stack": "Mi stack",
+  "title:contact": "contact",
+  "label:name": "nombre",
+  "label:email": "correo electrónico",
+  "label:comment": "comentario",
+  "send": "enviar"
 }
