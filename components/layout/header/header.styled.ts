@@ -11,7 +11,7 @@ export const HeaderStyled = styled.header`
   z-index: 99;
 
   @media screen and (min-width: 375px) {
-    padding-inline: 1.5rem;
+    padding: 0 1.5rem;
   }
 `
 
@@ -44,14 +44,14 @@ interface ISome {
 
 export const HeaderIconMenu = styled.div<ISome>`
   position: relative;
-  inline-size: 40px;
-  block-size: 40px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   .line {
     position: absolute;
-    inset-block-start: 50%;
-    inline-size: 100%;
-    block-size: 2.5px;
+    top: 50%;
+    width: 100%;
+    height: 2.5px;
     display: block;
     background-color: ${({ theme }) => theme['light-blue']};
     transition: all 0.3s ease-in-out;
@@ -61,16 +61,16 @@ export const HeaderIconMenu = styled.div<ISome>`
     position: absolute;
     content: '';
     display: block;
-    inline-size: 100%;
-    block-size: 2.5px;
+    width: 100%;
+    height: 2.5px;
     background-color: ${({ theme }) => theme['light-blue']};
     transition: all 0.3s ease-in-out;
   }
   .line::before {
-    inset-block-start: -0.5rem;
+    top: -0.5rem;
   }
   .line::after {
-    inset-block-start: 0.5rem;
+    top: 0.5rem;
   }
 
   ${props =>

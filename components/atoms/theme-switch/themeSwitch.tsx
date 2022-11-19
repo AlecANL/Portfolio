@@ -5,10 +5,10 @@ import { AppContext } from 'pages/_app'
 
 import { ThemeSwitchStyled } from './themeSwitch.styled'
 
-import iconSun from '../../public/assets/icons/icon-sun.svg'
-import iconMoon from '../../public/assets/icons/icon-moon.svg'
+import iconSun from '../../../public/assets/icons/icon-sun.svg'
+import iconMoon from '../../../public/assets/icons/icon-moon.svg'
 
-import { ETheme } from '../../models/general.enum'
+import { ETheme } from '@models/general.enum'
 
 export function ThemeSwitch() {
   const { toggleTheme, theme } = useContext(AppContext)

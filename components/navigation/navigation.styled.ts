@@ -7,9 +7,10 @@ interface INavigationStyled {
 export const NavigationStyled = styled.nav<INavigationStyled>`
   position: fixed;
   background-color: ${({ theme }) => theme['body-color']};
-  inset-inline: 0;
-  inset-block-start: 95px;
-  inset-block-end: 0;
+  left: 0;
+  right: 0;
+  top: 95px;
+  bottom: 0;
   visibility: hidden;
   z-index: 99;
   transition: visibility 0.2s ease-out;
@@ -18,7 +19,7 @@ export const NavigationStyled = styled.nav<INavigationStyled>`
     props.isOpen &&
     `
         visibility: visible;
-    `}
+    `};
 
   @media screen and (min-width: 768px) {
     position: static;
@@ -44,8 +45,7 @@ export const NavigationListStyled = styled.ul<INavigationStyled>`
   will-change: transform;
 
   a {
-    padding-inline: 1.5rem;
-    padding-block: 12px;
+    padding: 12px 1.5rem;
     text-transform: uppercase;
     font: var(--font-menu);
   }
@@ -58,7 +58,7 @@ export const NavigationListStyled = styled.ul<INavigationStyled>`
     props.isOpen &&
     `
     transform: translateX(0);
-  `}
+  `};
 
   @media screen and (min-width: 768px) {
     display: flex;

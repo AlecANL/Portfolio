@@ -5,20 +5,21 @@ export const CardProjectStyled = styled.article`
   position: relative;
   display: flex;
   flex-direction: column;
+  margin: 3rem 0;
 
   @media screen and (min-width: 1024px) {
     flex-direction: row;
-    margin-block: 100px;
+    margin: 100px 0;
   }
 `
 
 export const CardProjectDescription = styled.div`
   p {
-    margin-block: 1.5rem;
+    margin: 1.5rem 0;
   }
 
   @media screen and (min-width: 1024px) {
-    max-inline-size: 28.4375rem;
+    max-width: 28.4375rem;
     align-self: center;
 
     h3.heading {
@@ -45,14 +46,14 @@ export const CardProjectButtons = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-block-start: 1.5rem;
+  margin-top: 1.5rem;
 
   a {
     display: flex;
     justify-content: center;
-    inline-size: 100%;
+    width: 100%;
     border-radius: 0.25rem;
-    padding-block: 8px;
+    padding: 8px 0;
     &:active {
       transform: scale(0.95);
     }
@@ -72,7 +73,7 @@ export const CardProjectButtons = styled.div`
   @media screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    margin-block-start: 2.5625rem;
+    margin-top: 2.5625rem;
   }
 `
 
@@ -83,8 +84,13 @@ export const CardTagContent = styled.div`
 `
 
 export const PatternImage = styled.img`
-  inline-size: 278px;
-  block-size: 152px;
+  width: 200px;
+  height: 100px;
   position: absolute;
   z-index: 0;
+  
+  @media screen and (min-width: 768px) {
+    width: 278px;
+    height: 152px;
+  }
 `

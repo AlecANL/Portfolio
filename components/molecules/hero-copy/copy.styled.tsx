@@ -14,7 +14,7 @@ export const CopyStyled = styled.div`
 
   .name {
     color: ${({ theme }) => theme['just-white']};
-    padding-block: 0.5rem;
+    padding: .5rem 0;
   }
 
   p {
@@ -34,7 +34,7 @@ export const CopyStyled = styled.div`
     align-self: flex-start;
 
     .name {
-      padding-block: 0;
+      padding: 0;
     }
 
     p {
@@ -45,22 +45,22 @@ export const CopyStyled = styled.div`
 
   @media screen and (min-width: 1024px) {
     align-self: center;
-    max-inline-size: 40.25rem;
-    margin-block: 1.5rem 2.6875rem;
+    max-width: 40.25rem;
+    margin: 1.5rem 0 2.6875rem 0;
 
     &::before {
       content: '';
       position: absolute;
       display: block;
-      inline-size: 250px;
-      block-size: 250px;
+      width: 250px;
+      height: 250px;
       border-radius: 100%;
       background: linear-gradient(0deg, rgba(106, 17, 203, 0.2), rgba(106, 17, 203, 0.2)),
         conic-gradient(from 180deg at 50% 50%, #2575fc 0deg, rgba(183, 33, 255, 0) 360deg);
       background-blend-mode: normal, overlay;
       filter: blur(48px);
-      inset-inline-start: -100px;
-      inset-block-start: -50px;
+      left: -100px;
+      top: -50px;
       z-index: 0;
     }
   }

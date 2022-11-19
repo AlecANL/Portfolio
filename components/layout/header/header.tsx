@@ -1,10 +1,10 @@
 import React from 'react'
-import Navigation from '../navigation/navigation'
+import Navigation from '../../navigation/navigation'
 
-import { Logo } from '../logo/logo'
-import { ThemeSwitch } from 'components/theme-switch/themeSwitch'
-import { LanguageSwitch } from 'components/language-switch/languageSwitch'
-import { Wrapper } from 'components/wrapper/wrapper'
+import { Logo } from '@atoms/logo/logo'
+import { ThemeSwitch } from '@atoms/theme-switch/themeSwitch'
+import { LanguageSwitch } from '@atoms/language-switch/languageSwitch'
+import { Wrapper } from '@atoms/wrapper/wrapper'
 
 import { HeaderContent, HeaderIconMenu, HeaderNavContent, HeaderStyled, HeaderWidgetContent } from './header.styled'
 
@@ -37,17 +37,3 @@ function Header() {
 }
 
 export default Header
-
-// <div>
-//       <div>
-//         <div>
-//           <span>Alec</span>
-//         </div>
-//         <Navigation isOpenMenu={isOpenMenu} />
-//         <div>
-//           <div >
-//             <div></div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>

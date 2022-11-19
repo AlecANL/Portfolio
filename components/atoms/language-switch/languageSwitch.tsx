@@ -3,8 +3,8 @@ import Image from 'next/image'
 import { AppContext } from 'pages/_app'
 import { useContext } from 'react'
 
-import iconFlagEn from '../../public/assets/icons/flag-en.svg'
-import iconFlagEs from '../../public/assets/icons/flag-es.svg'
+import iconFlagEn from '../../../public/assets/icons/flag-en.svg'
+import iconFlagEs from '../../../public/assets/icons/flag-es.svg'
 
 import { LanguageSwitchContainerStyled } from './languageSwitch.styled'
 

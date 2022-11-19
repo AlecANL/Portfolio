@@ -5,8 +5,7 @@ export const ContactSectionStyled = styled.section`
   position: relative;
   display: flex;
   justify-content: center;
-  padding-block: 3.125rem;
-  margin-block: 200px;
+  padding: 3.125rem 0;
 
   p {
     font: var(--body3-regular-desktop);
@@ -21,27 +20,39 @@ export const ContactSectionStyled = styled.section`
     background-clip: text;
     font: var(--heading1-mobile);
   }
+  
+  @media screen and (min-width: 1024px) {
+    margin: 200px 0;
+  }
 `
 
 export const ContactContent = styled.div`
   form {
-    margin-block-start: 2.8125rem;
-    padding-inline: 40px;
+    margin-top: 2.8125rem;
   }
   @media screen and (min-width: 768px) {
-    max-inline-size: 515px;
+    max-width: 515px;
+    form {
+      padding: 0 40px;
+    }
   }
 `
 
 export const ContactGraphic = styled.img`
   position: absolute;
+  display: none;
 
   &.headband {
-    inset-inline-start: -150px;
-    inset-block-start: -100px;
+    left: -150px;
+    top: -100px;
   }
 
   &.rocket {
-    inset-inline-end: -150px;
+    right: -150px;
   }
+  
+  @media screen and (min-width: 1024px) {
+    display: block;
+  }
+
 `

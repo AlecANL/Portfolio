@@ -13,12 +13,12 @@ export const AboutSectionStyled = styled.section`
 
     &::before {
       position: absolute;
-      inset-block-start: -20px;
-      inset-inline-start: 50px;
+      top: -20px;
+      left: 50px;
       content: '';
       display: block;
-      inline-size: 350px;
-      block-size: 350px;
+      width: 350px;
+      height: 350px;
       background: linear-gradient(0deg, rgba(0, 242, 254, 0.2), rgba(0, 242, 254, 0.2)),
         linear-gradient(180deg, #4facfe 0%, rgba(183, 33, 255, 0) 100%);
       background-blend-mode: normal, overlay;
@@ -34,7 +34,7 @@ export const AboutSectionDescription = styled.div`
   flex-direction: column;
   gap: 1.5rem;
   align-items: flex-start;
-  max-inline-size: 40.25rem;
+  max-width: 40.25rem;
 
   h2.heading {
     color: ${({ theme }) => theme['just-white']};

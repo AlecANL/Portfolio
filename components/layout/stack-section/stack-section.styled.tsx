@@ -8,6 +8,7 @@ export const StackSectionStyled = styled.section`
   flex-direction: column;
   gap: 3.75rem;
   align-items: center;
+  margin: 2.5rem 0 2.5rem 0;
 
   h2.heading {
     text-transform: capitalize;
@@ -19,8 +20,8 @@ export const StackSectionStyled = styled.section`
   }
 
   @media screen and (min-width: 768px) {
-    margin-block-start: 6.25rem;
-    padding-block-end: 250px;
+    margin-top: 6.25rem;
+    padding-bottom: 250px;
   }
 `
 
@@ -28,25 +29,32 @@ export const StackSectionImage = styled.img``
 
 export const StackSectionImagePlanet = styled.img`
   position: absolute;
+  display: none;
 
   &.planet1 {
-    inset-inline-start: -180px;
-    inset-block-end: -50px;
+    left: -180px;
+    right: -50px;
   }
 
   &.planet2 {
-    inset-inline-end: 0;
-    inset-block-end: 0;
+    right: 0;
+    bottom: 0;
   }
 
   &.planet3 {
-    inset-inline-end: 0;
-    inset-block-start: 0;
+    top: 0;
+    right: 0;
   }
+  
+  @media screen and (min-width: 1024px) {
+    display: block;
+  }
+  
+ 
 `
 
 export const StackImageContent = styled.div`
-  max-inline-size: 27.5rem;
+  max-width: 27.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

@@ -3,8 +3,8 @@ import { useContext } from 'react'
 
 import { AppContext } from 'pages/_app'
 
-import logoDarkMode from '../../public/assets/icons/logo_alec_dev-dark.svg'
-import logoLightMode from '../../public/assets/icons/logo_alec_dev-light.svg'
+import logoDarkMode from '../../../public/assets/icons/logo_alec_dev-dark.svg'
+import logoLightMode from '../../../public/assets/icons/logo_alec_dev-light.svg'
 
 import { ETheme } from '@models/general.enum'
 

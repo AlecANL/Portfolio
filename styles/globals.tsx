@@ -148,7 +148,7 @@ body {
   body::-webkit-scrollbar-thumb {
     background-color: #999999;
     border-radius: 10px;
-    block-size: 3.125rem;
+    height: 3.125rem;
   }
 
 a {
@@ -161,12 +161,12 @@ a {
 }
 
 .wrapper {
-  max-inline-size: 1200px;
+  max-width: 1200px;
   margin: auto;
 }
 
   main {
-    padding-inline: 1.5rem;
+    padding: 0 1.5rem 0 1.5rem;
   }
 
 @media screen and (min-width: 64rem) {

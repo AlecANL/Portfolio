@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import { Hero } from '../components/hero/hero'
+import { Hero } from '../components/layout/hero'
 
 import projectListJson from '@data/projects-home.json'
-import { Wrapper } from 'components/wrapper/wrapper'
+import { Wrapper } from 'components/atoms/wrapper/wrapper'
 import { ProjectSection } from '@layout/project-section'
 import { AboutSection } from '@layout/about-section'
 import { StackSection } from '@layout/stack-section'

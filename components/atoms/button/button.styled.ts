@@ -2,8 +2,7 @@ import styled from 'styled-components'
 import { IButtonProps } from './button'
 
 export const ButtonStyled = styled.button<IButtonProps>`
-  padding-inline: 1.5rem;
-  padding-block: 0.5rem;
+  padding: .5rem 1.5rem;
   font: var(--button-regular-mobile);
   border-color: transparent;
   border-radius: 4px;

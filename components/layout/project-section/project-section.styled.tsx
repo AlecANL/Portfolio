@@ -1,30 +1,32 @@
 import styled from 'styled-components'
 
 export const ProjectSectionStyled = styled.section`
-  article:nth-child(even) {
-    & > img {
-      inset-block-start: -20px;
-      inset-inline-start: -130px;
+  @media screen and (min-width: 768px) {
+    article:nth-child(even) {
+      & > img {
+        top: -20px;
+        left: -130px;
+      }
+
+      & > span {
+        order: 2;
+      }
+
+      & > div {
+        order: 1;
+      }
     }
 
-    & > span {
-      order: 2;
-    }
-
-    & > div {
-      order: 1;
+    article:nth-child(odd) {
+      & > img {
+        top: -20px;
+        right: 40px;
+      }
     }
   }
-
-  article:nth-child(odd) {
-    & > img {
-      inset-block-start: -20px;
-      inset-inline-end: 40px;
-    }
-  }
-
+ 
   @media screen and (min-width: 1024px) {
-    padding-block: 3rem;
+    padding: 3rem 0;
   }
 `
 

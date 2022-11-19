@@ -1,6 +1,6 @@
 import { createContext } from 'react'
 
-import Header from '../components/header/header'
+import Header from '../components/layout/header/header'
 
 import { useRouter } from 'next/router'
 import { useDarkMode } from '@hooks/useDarkMode'

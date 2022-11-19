@@ -11,15 +11,15 @@ export const HeroImageContainerStyled = styled.div`
       content: '';
       position: absolute;
       display: block;
-      inline-size: 250px;
-      block-size: 250px;
+      width: 250px;
+      height: 250px;
       border-radius: 100%;
       background: linear-gradient(0deg, rgba(106, 17, 203, 0.2), rgba(106, 17, 203, 0.2)),
         conic-gradient(from 180deg at 50% 50%, #21d4fd 0deg, rgba(183, 33, 255, 0) 360deg);
       background-blend-mode: overlay;
       filter: blur(48px);
-      inset-inline-end: -40px;
-      inset-block-start: 30px;
+      right: -40px;
+      top: 30px;
       z-index: 0;
     }
   }
@@ -48,26 +48,26 @@ export const HeroImageIcons = styled.img`
   }
 
   &.icon-react {
-    inset-block-start: 120px;
-    inset-inline-start: 0;
+    top: 120px;
+    left: 0;
   }
 
   &.icon-angular {
-    inset-block-end: 0;
     --delay: 2s;
-    inset-inline-start: 100px;
+    left: 100px;
+    bottom: 0;
   }
 
   &.icon-typescript {
-    inset-block-start: 50px;
-    inset-inline-end: 0;
     --delay: 3s;
+    top: 50px;
+    right: 0;
   }
 
   &.icon-tailwind {
-    inset-block-end: 50px;
-    inset-inline-end: 0;
     --delay: 1s;
+    bottom: 50px;
+    right: 0;
   }
 
   &.icon-javascript {
@@ -82,13 +82,13 @@ export const HeroImageIcons = styled.img`
     }
 
     &.icon-typescript {
-      inset-block-start: 100px;
-      inset-inline-end: 60px;
+      top: 100px;
+      right: 60px;
     }
 
     &.icon-tailwind {
-      inset-block-end: 80px;
-      inset-inline-end: 60px;
+      bottom: 80px;
+      right: 60px;
     }
   }
 `
