@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const ContactSectionStyled = styled.section`
-  outline: 1px solid red;
   position: relative;
   display: flex;
   justify-content: center;
@@ -22,7 +21,7 @@ export const ContactSectionStyled = styled.section`
   }
   
   @media screen and (min-width: 1024px) {
-    margin: 200px 0;
+    margin: 50px 0;
   }
 `
 
@@ -44,7 +43,7 @@ export const ContactGraphic = styled.img`
 
   &.headband {
     left: -150px;
-    top: -100px;
+    top: -50px;
   }
 
   &.rocket {

@@ -11,8 +11,9 @@ export const HeaderStyled = styled.header`
   z-index: 99;
 
   @media screen and (min-width: 375px) {
-    padding: 0 1.5rem;
+    padding: .8rem 1.5rem;
   }
+  
 `
 
 export const HeaderNavContent = styled.div`

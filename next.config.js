@@ -1,7 +1,7 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['github.com'],
+    domains: ['github.com', 'raw.githubusercontent.com'],
   },
   i18n: {
     locales: ['es-ES', 'en-US'],

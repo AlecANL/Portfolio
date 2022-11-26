@@ -28,7 +28,7 @@ export const FormGroup = styled.div`
   }
 
   label {
-    font-size: 12px;
+    font-size: 1rem;
     text-transform: capitalize;
   }
 
@@ -39,9 +39,11 @@ export const FormGroup = styled.div`
     padding: 1rem .5rem;
     border-radius: 4px;
     color: ${({theme}) => theme['soft-gray']};
+    font-size: 14px;
 
     &::placeholder {
       color: ${({theme}) => theme['soft-gray']};
+      font-size: 14px;
     }
   }
 

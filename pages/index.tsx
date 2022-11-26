@@ -1,12 +1,14 @@
 import Head from 'next/head'
 import { Hero } from '../components/layout/hero'
 
-import projectListJson from '@data/projects-home.json'
 import { Wrapper } from 'components/atoms/wrapper/wrapper'
 import { ProjectSection } from '@layout/project-section'
 import { AboutSection } from '@layout/about-section'
 import { StackSection } from '@layout/stack-section'
 import { ContactSection } from '@layout/contact-section'
+import { Footer } from '@molecules/footer'
+import { MainStyled } from '../styles/globals'
+import projectsJson from '@data/projects-home.json'
 
 export default function Home() {
   return (
@@ -17,14 +19,15 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Hero />
-      <main>
+      <MainStyled>
         <Wrapper>
-          <ProjectSection projects={projectListJson} />
+          <ProjectSection projects={projectsJson} />
           <AboutSection />
           <StackSection />
           <ContactSection />
+          <Footer />
         </Wrapper>
-      </main>
+      </MainStyled>
     </>
   )
 }

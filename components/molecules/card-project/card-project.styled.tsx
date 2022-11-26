@@ -1,15 +1,14 @@
 import styled from 'styled-components'
 
 export const CardProjectStyled = styled.article`
-  outline: 1px solid red;
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 3rem 0;
+  /* margin: 3rem 0; */
 
   @media screen and (min-width: 1024px) {
     flex-direction: row;
-    margin: 100px 0;
+    /* margin: 100px 0; */
   }
 `
 
@@ -88,7 +87,7 @@ export const PatternImage = styled.img`
   height: 100px;
   position: absolute;
   z-index: 0;
-  
+
   @media screen and (min-width: 768px) {
     width: 278px;
     height: 152px;

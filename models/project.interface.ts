@@ -1,11 +1,6 @@
 export interface ICardProjectProps {
-  id: string
-  title: string
-  description: string
-  cover: IProjectCover
-  tagStack: ITagStack[]
-  repository: string
-  demo: string
+  project: ICardProject
+  isShowCount?: boolean
 }
 
 export interface ITagStack {
@@ -18,4 +13,15 @@ export interface IProjectCover {
   url: string
   width?: number
   height?: number
+}
+
+export interface ICardProject {
+  id: string
+  title: string
+  description: string | null
+  cover: IProjectCover
+  tagStack: ITagStack[]
+  repository: string
+  demo: string
+  pattern: boolean
 }

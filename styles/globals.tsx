@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 declare module 'styled-components' {
   export interface DefaultTheme {
@@ -16,13 +16,13 @@ declare module 'styled-components' {
 
 export const lightTheme = {
   'body-color': '#ffff',
-  'just-white': '#fff',
+  'just-white': '#2f2d39',
   logan: '#A9ADC1',
   'just-orange': '#ffff',
   'just-pink': '#ffff',
   'light-blue': '#3da9fc',
   'dark-grey': '#2b313b',
-  'black-currant': '#2f2d39',
+  'black-currant': '#fff',
   'soft-gray': '#a4a4a4',
 }
 
@@ -165,14 +165,31 @@ a {
   margin: auto;
 }
 
-  main {
-    padding: 0 1.5rem 0 1.5rem;
-  }
-
 @media screen and (min-width: 64rem) {
     body {
         font: var(--body1-regular-desktop);
     }
 }
 
+`
+
+export const MainStyled = styled.main`
+  padding: 0 1.5rem 0 1.5rem;
+`
+
+export const MainProjectsContainer = styled.main`
+  & > div {
+    padding-bottom: 100px;
+    position: relative;
+  }
+
+  min-height: 100vh;
+
+  footer {
+    position: absolute;
+    padding: 1.5rem 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 `

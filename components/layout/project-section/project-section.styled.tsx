@@ -28,6 +28,15 @@ export const ProjectSectionStyled = styled.section`
   @media screen and (min-width: 1024px) {
     padding: 3rem 0;
   }
+  
+  .heading-h2 {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    background: linear-gradient(87.84deg, #f77062 17.87%, #fe5196 74.89%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 `
 
 export const ProjectSectionCardsContainer = styled.div``

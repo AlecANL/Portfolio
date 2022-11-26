@@ -15,7 +15,7 @@ export function AboutSection() {
 
   return (
     <>
-      <AboutSectionStyled>
+      <AboutSectionStyled id='about'>
         <Image src={aboutIcon} alt='about icon include a rocket up to planet' />
         <AboutSectionDescription>
           <Heading type='h2'>{currentLanguage['title:about']}</Heading>

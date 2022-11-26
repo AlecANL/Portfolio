@@ -31,13 +31,3 @@ function Navigation({ isOpenMenu }) {
 
 export default Navigation
 
-{
-  /* <div>
-        <Link href='/' locale='en-US'>
-          <a>English</a>
-        </Link>
-        <Link href='/' locale='es-ES'>
-          <a>Spanish</a>
-        </Link>
-      </div> */
-}

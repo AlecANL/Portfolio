@@ -16,7 +16,8 @@ import { TechTag } from '@atoms/tech-tag'
 import patternImage from '/public/assets/images/circle-pattern.png'
 
 export function CardProject(props: ICardProjectProps) {
-  const { cover, repository, demo, title, description, tagStack, id } = props ?? {}
+  const { cover, repository, demo, title, description, tagStack, id, pattern } = props?.project ?? {}
+  const { isShowCount } = props ?? {}
   const { currentLanguage } = useLanguage(en, es)
 
   function getPositionProject(id: string) {
@@ -26,7 +27,7 @@ export function CardProject(props: ICardProjectProps) {
   return (
     <>
       <CardProjectStyled>
-        <PatternImage src={patternImage.src} alt='pattern circles' />
+        {pattern && <PatternImage src={patternImage.src} alt='pattern circles' />}
         <Image
           src={cover.url}
           alt={`${currentLanguage[title]} cover for project`}
@@ -35,9 +36,9 @@ export function CardProject(props: ICardProjectProps) {
         />
         <CardProjectDescription>
           <Heading type='h3'>
-            {getPositionProject(id)} {currentLanguage[title]}
+            {isShowCount && getPositionProject(id)} {currentLanguage[title]}
           </Heading>
-          <Paragraph>{currentLanguage[description]}</Paragraph>
+          {description && <Paragraph>{currentLanguage[description]}</Paragraph>}
           <CardTagContent>
             {tagStack.map(tag => (
               <TechTag key={tag.id} name={tag.name} icon={tag.icon} id={tag.id} />

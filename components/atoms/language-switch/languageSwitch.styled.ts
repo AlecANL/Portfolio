@@ -6,4 +6,7 @@ export const LanguageSwitchContainerStyled = styled.button`
   padding: 0;
   border: none;
   background-color: unset;
+  cursor: pointer;
 `
+
+export const LanguageSwitchImg = styled.img``

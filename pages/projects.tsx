@@ -1,18 +1,30 @@
-import Image from 'next/image';
-import styles from '../styles/projects.module.css';
+import Image from 'next/image'
+import { Wrapper } from '@atoms/wrapper/wrapper'
+import { Footer } from '@molecules/footer'
+import { Search } from '@molecules/search'
+import { ProjectsSlide } from '@molecules/projects-slide'
+import { MainProjectsContainer } from '../styles/globals'
+
+import listProjectsJson from '@data/list-projects.json'
+import { CardProject } from '@molecules/card-project'
+import { ICardProjectProps } from '@models/project.interface'
+import { ProjectsContentStyled } from 'styles/projects.styled'
 
 function Projects() {
   return (
-    <main className={styles.main}>
-      <Image
-        src="/construction.svg"
-        width={400}
-        height={400}
-        alt="construction illustration"
-      />
-      <h1>Comming soon...</h1>
-    </main>
-  );
+    <MainProjectsContainer>
+      <ProjectsSlide />
+      <Wrapper>
+        <Search />
+        <ProjectsContentStyled>
+          {listProjectsJson.map(project => (
+            <CardProject key={project.id} project={project} />
+          ))}
+        </ProjectsContentStyled>
+        <Footer />
+      </Wrapper>
+    </MainProjectsContainer>
+  )
 }
 
-export default Projects;
+export default Projects

@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "icon": "/assets/icons/social/github-icon.svg",
+    "name": "github",
+    "url": "http://localhost:3000/en-US"
+  },
+  {
+    "id": 2,
+    "icon": "/assets/icons/social/linkedin-icon.svg",
+    "name": "linkedin",
+    "url": "http://localhost:3000/en-US"
+  }
+]

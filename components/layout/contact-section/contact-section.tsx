@@ -16,11 +16,9 @@ export function ContactSection() {
 
   return (
     <>
-      <ContactSectionStyled>
+      <ContactSectionStyled id='contact'>
         <ContactGraphic className='headband' src={headbandImage.src} alt='headband icon' />
         <ContactGraphic className='rocket' src={rocketImage.src} alt='rocket icon' />
-        {/* <Image src={headbandImage} alt='headband icon' /> */}
-        {/* <Image src={rocketImage} alt='rocket icon' /> */}
         <ContactContent>
           <Heading type='h3'>{currentLanguage['title:contact']}</Heading>
           <Paragraph>{currentLanguage['description:contact']}</Paragraph>

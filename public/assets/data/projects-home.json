@@ -3,6 +3,7 @@
     "id": "1",
     "title": "title:all_notes",
     "description": "project:all_notes",
+    "pattern": true,
     "cover": {
       "url": "/assets/images/project-1.png",
       "width": 745,
@@ -35,6 +36,7 @@
     "id": "2",
     "title": "title:all_notes",
     "description": "project:all_notes",
+    "pattern": true,
     "cover": {
       "url": "/assets/images/project-1.png",
       "width": 745,

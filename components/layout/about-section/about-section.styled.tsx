@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const AboutSectionStyled = styled.section`
-  outline: 1px solid red;
   position: relative;
   display: flex;
   flex-direction: column;
