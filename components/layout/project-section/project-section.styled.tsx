@@ -24,11 +24,11 @@ export const ProjectSectionStyled = styled.section`
       }
     }
   }
- 
+
   @media screen and (min-width: 1024px) {
     padding: 3rem 0;
   }
-  
+
   .heading-h2 {
     text-transform: capitalize;
     letter-spacing: 1px;
@@ -39,4 +39,10 @@ export const ProjectSectionStyled = styled.section`
   }
 `
 
-export const ProjectSectionCardsContainer = styled.div``
+export const ProjectSectionCardsContainer = styled.div`
+  @media screen and (min-width: 1024px) {
+    article {
+      margin: 150px 0;
+    }
+  }
+`

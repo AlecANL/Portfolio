@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const StackSectionStyled = styled.section`
-  outline: 1px solid red;
   position: relative;
   display: flex;
   justify-content: center;
@@ -23,6 +22,10 @@ export const StackSectionStyled = styled.section`
     margin-top: 6.25rem;
     padding-bottom: 250px;
   }
+
+  @media screen and (min-width: 1024px) {
+    margin: 14.5rem 0 10rem 0;
+  }
 `
 
 export const StackSectionImage = styled.img``
@@ -32,31 +35,53 @@ export const StackSectionImagePlanet = styled.img`
   display: none;
 
   &.planet1 {
-    left: -180px;
+    transform: translateX(-400px);
+    left: 0;
     right: -50px;
   }
 
   &.planet2 {
+    transform: translateX(100px);
     right: 0;
     bottom: 0;
   }
 
   &.planet3 {
-    top: 0;
+    transform: translateX(140px);
+    top: -100px;
     right: 0;
   }
-  
+
   @media screen and (min-width: 1024px) {
     display: block;
   }
-  
- 
 `
 
 export const StackImageContent = styled.div`
-  max-width: 27.5rem;
+  max-width: 47.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2.5rem;
+
+  & > div {
+    border-radius: 100px;
+    min-width: 190px;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0.5rem 1rem 0.5rem 0.75rem;
+    background: hsl(230, 12%, 20%);
+  }
+
+  span:first-child {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  span.badge-name {
+    font-size: 18px;
+    font-family: Matter;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
 `

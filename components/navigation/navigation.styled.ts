@@ -50,6 +50,10 @@ export const NavigationListStyled = styled.ul<INavigationStyled>`
     font: var(--font-menu);
   }
 
+  a[aria-current] {
+    color: #fff;
+  }
+
   a:hover {
     color: ${({ theme }) => theme['just-white']};
   }

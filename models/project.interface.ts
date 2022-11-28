@@ -7,6 +7,8 @@ export interface ITagStack {
   id: string
   name: string
   icon: string
+  width?: number
+  height?: number
 }
 
 export interface IProjectCover {
@@ -24,4 +26,5 @@ export interface ICardProject {
   repository: string
   demo: string
   pattern: boolean
+  copy?: string
 }

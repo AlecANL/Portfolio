@@ -2,14 +2,11 @@ import styled from 'styled-components'
 
 export const ProjectsContentStyled = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 36px;
-
-  article {
-    flex-direction: column;
-  }
+  padding: 1.5rem;
 
   @media screen and (min-width: 1024px) {
-    padding: 90px 0 125px 0;
+    padding: 30px 0 125px 0;
   }
 `

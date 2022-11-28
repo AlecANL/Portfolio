@@ -12,6 +12,7 @@ import { useLanguage } from '@hooks/useLanguage'
 import planet1Icon from '/public/assets/icons/planets/planet-1.svg'
 import planet2Icon from '/public/assets/icons/planets/planet-2.svg'
 import planet3Icon from '/public/assets/icons/planets/planet-3.svg'
+import { TechTag } from '@atoms/tech-tag'
 
 export function StackSection() {
   const listStack: IStack[] = stackListJson
@@ -23,14 +24,7 @@ export function StackSection() {
         <Heading type='h2'>{currentLanguage['title:stack']}</Heading>
         <StackImageContent>
           {listStack.map(stack => (
-            <StackSectionImage
-              className={classnames({
-                [`icon-${stack.name}`]: stack.name,
-              })}
-              key={stack.id}
-              src={stack.icon}
-              alt={stack.name}
-            />
+            <TechTag key={stack?.id} id={stack.id} name={stack?.name} icon={stack?.icon} height={stack?.height} width={stack?.width} />
           ))}
         </StackImageContent>
 

@@ -23,7 +23,7 @@ export default function Home() {
         <Wrapper>
           <ProjectSection projects={projectsJson} />
           <AboutSection />
-          {/* <StackSection /> */}
+          <StackSection />
           <ContactSection />
           <Footer />
         </Wrapper>

@@ -7,15 +7,18 @@ interface ICustomLinkProps {
   url: string
   children: React.ReactNode
   className?: string
+  isOpenNewTab?: boolean
 }
 
 export function CustomLink(props: ICustomLinkProps) {
-  const { url, children, className } = props ?? {}
+  const { url, children, className, isOpenNewTab } = props ?? {}
 
   return (
     <>
       <Link href={url} passHref>
         <CustomLinkStyled
+          target={isOpenNewTab ? '_blank' : '_self'}
+          rel={isOpenNewTab ? 'noopener noreferrer' : ''}
           className={classnames({
             [className]: className,
           })}

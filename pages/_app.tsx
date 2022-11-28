@@ -1,4 +1,5 @@
 import { createContext } from 'react'
+import '../public/assets/fonts/icons/icons.css'
 
 import Header from '../components/layout/header/header'
 

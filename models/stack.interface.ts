@@ -1,5 +1,7 @@
 export interface IStack {
-  id: number
+  id: string
   icon: string
   name: string
+  height?: number
+  width?: number
 }

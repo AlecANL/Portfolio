@@ -1,32 +1,44 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "icon": "/assets/icons/bg-stack/bg-angular-icon.svg",
-    "name": "angular"
+    "name": "angular",
+    "height": 51,
+    "width": 51
   },
   {
-    "id": 2,
+    "id": "2",
     "icon": "/assets/icons/bg-stack/bg-css-icon.svg",
-    "name": "css"
+    "name": "css",
+    "height": 51,
+    "width": 51
   },
   {
-    "id": 3,
+    "id": "3",
     "icon": "/assets/icons/bg-stack/bg-html-icon.svg",
-    "name": "html"
+    "name": "html",
+    "height": 51,
+    "width": 51
   },
   {
-    "id": 4,
+    "id": "4",
     "icon": "/assets/icons/bg-stack/bg-javascript-icon.svg",
-    "name": "javascript"
+    "name": "javascript",
+    "height": 51,
+    "width": 51
   },
   {
-    "id": 5,
+    "id": "5",
     "icon": "/assets/icons/bg-stack/bg-react-icon.svg",
-    "name": "react"
+    "name": "react",
+    "height": 51,
+    "width": 51
   },
   {
-    "id": 6,
+    "id": "6",
     "icon": "/assets/icons/bg-stack/bg-tailwind-icon.svg",
-    "name": "tailwind"
+    "name": "tailwind",
+    "height": 51,
+    "width": 51
   }
 ]

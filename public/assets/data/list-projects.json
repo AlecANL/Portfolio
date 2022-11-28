@@ -4,6 +4,7 @@
     "title": "devFinder",
     "description": null,
     "pattern": false,
+    "copy": "Frontend challenge for search every profile in github",
     "cover": {
       "url": "https://raw.githubusercontent.com/AlecANL/devfinder/main/public/dark-design.png",
       "width": 375,
@@ -37,6 +38,7 @@
     "title": "devFinder",
     "description": null,
     "pattern": false,
+    "copy": "Frontend challenge for search every profile in github. With github API",
     "cover": {
       "url": "https://raw.githubusercontent.com/AlecANL/devfinder/main/public/dark-design.png",
       "width": 375,
@@ -70,6 +72,109 @@
     "title": "devFinder",
     "description": null,
     "pattern": false,
+    "copy": "Frontend challenge",
+    "cover": {
+      "url": "https://raw.githubusercontent.com/AlecANL/devfinder/main/public/dark-design.png",
+      "width": 375,
+      "height": 253
+    },
+    "tagStack": [
+      {
+        "id": "1",
+        "name": "typescript",
+        "icon": "/assets/icons/tag-stack/typescript-icon.svg"
+      },
+
+      {
+        "id": "2",
+        "name": "styled components",
+        "icon": "/assets/icons/tag-stack/styled-components-icon.svg"
+      },
+
+      {
+        "id": "3",
+        "name": "nextjs",
+        "icon": "/assets/icons/tag-stack/nextjs-icon.svg"
+      }
+    ],
+
+    "repository": "https://github.com/AlecANL/all-notes",
+    "demo": "https://all-notes-js4ypaybw-alecanl.vercel.app/"
+  },
+  {
+    "id": "4",
+    "title": "devFinder",
+    "description": null,
+    "pattern": false,
+    "copy": "Frontend challenge for search every profile in github. With github API and show...",
+    "cover": {
+      "url": "https://raw.githubusercontent.com/AlecANL/devfinder/main/public/dark-design.png",
+      "width": 375,
+      "height": 253
+    },
+    "tagStack": [
+      {
+        "id": "1",
+        "name": "typescript",
+        "icon": "/assets/icons/tag-stack/typescript-icon.svg"
+      },
+
+      {
+        "id": "2",
+        "name": "styled components",
+        "icon": "/assets/icons/tag-stack/styled-components-icon.svg"
+      },
+
+      {
+        "id": "3",
+        "name": "nextjs",
+        "icon": "/assets/icons/tag-stack/nextjs-icon.svg"
+      }
+    ],
+
+    "repository": "https://github.com/AlecANL/all-notes",
+    "demo": "https://all-notes-js4ypaybw-alecanl.vercel.app/"
+  },
+  {
+    "id": "5",
+    "title": "devFinder",
+    "description": null,
+    "pattern": false,
+    "copy": "Frontend challenge for search every profile in github. With github API and show more information...",
+    "cover": {
+      "url": "https://raw.githubusercontent.com/AlecANL/devfinder/main/public/dark-design.png",
+      "width": 375,
+      "height": 253
+    },
+    "tagStack": [
+      {
+        "id": "1",
+        "name": "typescript",
+        "icon": "/assets/icons/tag-stack/typescript-icon.svg"
+      },
+
+      {
+        "id": "2",
+        "name": "styled components",
+        "icon": "/assets/icons/tag-stack/styled-components-icon.svg"
+      },
+
+      {
+        "id": "3",
+        "name": "nextjs",
+        "icon": "/assets/icons/tag-stack/nextjs-icon.svg"
+      }
+    ],
+
+    "repository": "https://github.com/AlecANL/all-notes",
+    "demo": "https://all-notes-js4ypaybw-alecanl.vercel.app/"
+  },
+  {
+    "id": "6",
+    "title": "devFinder",
+    "description": null,
+    "pattern": false,
+    "copy": "Frontend challenge for search every profile in github. With github API",
     "cover": {
       "url": "https://raw.githubusercontent.com/AlecANL/devfinder/main/public/dark-design.png",
       "width": 375,

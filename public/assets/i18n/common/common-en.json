@@ -21,5 +21,7 @@
   "label:name": "name",
   "label:email": "email",
   "label:comment": "comment",
-  "send": "send"
+  "send": "send",
+  "devFinder": "devFinder",
+  "subtitle:projects": "Project's and work's"
 }

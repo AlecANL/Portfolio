@@ -11,6 +11,7 @@ declare module 'styled-components' {
     'dark-grey': string
     'black-currant': string
     'soft-gray': string
+    'soft-black': string
   }
 }
 
@@ -23,11 +24,14 @@ export const lightTheme = {
   'light-blue': '#3da9fc',
   'dark-grey': '#2b313b',
   'black-currant': '#fff',
+  'soft-black': '#4b4c53',
   'soft-gray': '#a4a4a4',
 }
 
 export const darkTheme = {
-  'body-color': '#201d28',
+  'body-color': '#1f2028',
+  // 'body-color': '#161616',
+  // 'body-color': '#201d28',
   'just-white': '#fff',
   logan: '#a9adc1',
   'just-orange': '#f77062',
@@ -35,10 +39,39 @@ export const darkTheme = {
   'light-blue': '#3da9fc',
   'dark-grey': '#2b313b',
   'black-currant': '#2f2d39',
+  'soft-black': '#4b4c53',
   'soft-gray': '#a4a4a4',
 }
 
 export const GlobalStyled = createGlobalStyle`
+
+@font-face {
+    font-family: Matter;
+    src: url('/assets/fonts/matter/Matter-Bold.otf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Matter;
+    src: url('/assets/fonts/matter/Matter-SemiBold.otf');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Matter;
+    src: url('/assets/fonts/matter/Matter-Medium.otf');
+    font-style: normal;
+    font-weight: 500;
+} 
+
+@font-face {
+    font-family: Matter;
+    src: url('/assets/fonts/matter/Matter-Regular.otf');
+    font-style: normal;
+    font-weight: 400;
+} 
 
 @font-face {
     font-family: palaquinDark;
@@ -137,16 +170,17 @@ body {
   background-color: ${({ theme }) => theme['body-color']};
   color: ${({ theme }) => theme.logan};
   font: var(--body1-mobile);
+  overflow-x: hidden;
 }
 
   body::-webkit-scrollbar {
     width: 10px;
   }
   body::-webkit-scrollbar-track {
-    background-color: #efefef;
+    background-color: hsl(0, 0%, 26%);
   }
   body::-webkit-scrollbar-thumb {
-    background-color: #999999;
+    background-color: hsl(0, 0%, 41%);
     border-radius: 10px;
     height: 3.125rem;
   }
@@ -178,6 +212,24 @@ export const MainStyled = styled.main`
 `
 
 export const MainProjectsContainer = styled.main`
+  h1.heading-h1 {
+    position: relative;
+    margin: 80px 0 30px 0;
+    text-align: left;
+    color: #fff;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 6px;
+      left: 0;
+      bottom: -4px;
+      border-radius: 4px;
+      background: #fff;
+    }
+  }
+
   & > div {
     padding-bottom: 100px;
     position: relative;

@@ -7,11 +7,11 @@
   {
     "id": 2,
     "name": "menu_about",
-    "url": "#about"
+    "url": "/#about"
   },
   {
     "id": 3,
     "name": "menu_contact",
-    "url": "#contact"
+    "url": "/#contact"
   }
 ]

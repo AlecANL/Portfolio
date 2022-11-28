@@ -9,10 +9,17 @@ import menuEs from '@i18n/common/common-es.json'
 import menuJson from '@data/menu.json'
 
 import { IMenuNavigation } from '@models/menu'
+import { useRouter } from 'next/router'
+import { Attributes, DetailedHTMLProps } from 'react'
 
 function Navigation({ isOpenMenu }) {
   const { currentLanguage } = useLanguage(menuEn, menuEs)
+  const { asPath } = useRouter()
   const navMenu: IMenuNavigation[] = menuJson
+
+  function getCurrentPage(href: string) {
+    return href === asPath ? 'page' : (undefined as DetailedHTMLProps<any, HTMLAnchorElement>['aria-current'])
+  }
 
   return (
     <NavigationStyled isOpen={isOpenMenu}>
@@ -20,7 +27,7 @@ function Navigation({ isOpenMenu }) {
         {navMenu.map(menuItem => (
           <li key={menuItem.id}>
             <Link href={menuItem.url}>
-              <a> {currentLanguage[menuItem.name]} </a>
+              <a aria-current={getCurrentPage(menuItem?.url)}> {currentLanguage[menuItem.name]} </a>
             </Link>
           </li>
         ))}
@@ -30,4 +37,3 @@ function Navigation({ isOpenMenu }) {
 }
 
 export default Navigation
-

@@ -9,16 +9,22 @@ import listProjectsJson from '@data/list-projects.json'
 import { CardProject } from '@molecules/card-project'
 import { ICardProjectProps } from '@models/project.interface'
 import { ProjectsContentStyled } from 'styles/projects.styled'
+import { SweetProject } from '@molecules/sweet-project'
+
+import en from '@i18n/common/common-en.json'
+import es from '@i18n/common/common-es.json'
+import { useLanguage } from '../hooks/useLanguage'
+import { Heading } from '@atoms/heading'
 
 function Projects() {
+  const { currentLanguage } = useLanguage(en, es)
   return (
     <MainProjectsContainer>
-      <ProjectsSlide />
       <Wrapper>
-        <Search />
+        <Heading type='h1'>{currentLanguage['subtitle:projects']}</Heading>
         <ProjectsContentStyled>
           {listProjectsJson.map(project => (
-            <CardProject key={project.id} project={project} />
+            <SweetProject key={project?.id} project={project} />
           ))}
         </ProjectsContentStyled>
         <Footer />
