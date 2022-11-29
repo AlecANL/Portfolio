@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const FormStyled = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 2rem;
 
   @media screen and (min-width: 768px) {
     button {
@@ -28,22 +28,28 @@ export const FormGroup = styled.div`
   }
 
   label {
-    font-size: 1rem;
+    font-size: 1.125rem;
+    font-family: Matter;
     text-transform: capitalize;
   }
 
   input,
   textarea {
     border: none;
-    background-color: ${({theme}) => theme['black-currant']};
-    padding: 1rem .5rem;
-    border-radius: 4px;
-    color: ${({theme}) => theme['soft-gray']};
-    font-size: 14px;
+    background-color: hsl(229, 11%, 20%);
+    /* background-color: ${({ theme }) => theme['black-currant']}; */
+    padding: 1rem 0.5rem;
+    border-radius: 8px;
+    color: ${({ theme }) => theme['soft-gray']};
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    font-family: Matter;
+    padding: 2rem;
 
     &::placeholder {
-      color: ${({theme}) => theme['soft-gray']};
-      font-size: 14px;
+      color: ${({ theme }) => theme['soft-gray']};
+      font-size: 18px;
     }
   }
 

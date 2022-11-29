@@ -6,7 +6,6 @@ import { ProjectSection } from '@layout/project-section'
 import { AboutSection } from '@layout/about-section'
 import { StackSection } from '@layout/stack-section'
 import { ContactSection } from '@layout/contact-section'
-import { Footer } from '@molecules/footer'
 import { MainStyled } from '../styles/globals'
 import projectsJson from '@data/projects-home.json'
 
@@ -25,7 +24,6 @@ export default function Home() {
           <AboutSection />
           <StackSection />
           <ContactSection />
-          <Footer />
         </Wrapper>
       </MainStyled>
     </>

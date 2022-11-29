@@ -40,5 +40,12 @@
     "name": "tailwind",
     "height": 51,
     "width": 51
+  },
+  {
+    "id": "7",
+    "icon": "/assets/icons/bg-stack/bg-typescript-icon.svg",
+    "name": "typescript",
+    "height": 51,
+    "width": 51
   }
 ]

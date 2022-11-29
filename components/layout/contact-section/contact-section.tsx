@@ -17,12 +17,16 @@ export function ContactSection() {
   return (
     <>
       <ContactSectionStyled id='contact'>
-        <ContactGraphic className='headband' src={headbandImage.src} alt='headband icon' />
-        <ContactGraphic className='rocket' src={rocketImage.src} alt='rocket icon' />
+        {/* <ContactGraphic className='headband' src={headbandImage.src} alt='headband icon' /> */}
+        {/* <ContactGraphic className='rocket' src={rocketImage.src} alt='rocket icon' /> */}
         <ContactContent>
           <Heading type='h3'>{currentLanguage['title:contact']}</Heading>
           <Paragraph>{currentLanguage['description:contact']}</Paragraph>
-          <Form />
+          <a href='mailto:alexeialvarez4@gmail.com'>@alexei</a>
+          {/* <h3>
+            Quieres trabajar conmigo? - ¡Hazme ping!
+          </h3> */}
+          {/* <Form /> */}
         </ContactContent>
       </ContactSectionStyled>
     </>

@@ -10,6 +10,7 @@ import { lightTheme, darkTheme, GlobalStyled } from '../styles/globals'
 
 import { ETheme } from '../models/general.enum'
 import { ThemeProvider } from 'styled-components'
+import { Footer } from '@molecules/footer'
 
 export const AppContext = createContext(null)
 
@@ -31,6 +32,7 @@ function MyApp({ Component, pageProps }) {
           <GlobalStyled />
           <Header />
           <Component {...pageProps} />
+          <Footer />
         </ThemeProvider>
       </AppContext.Provider>
     </>

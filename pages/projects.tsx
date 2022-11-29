@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { Wrapper } from '@atoms/wrapper/wrapper'
-import { Footer } from '@molecules/footer'
 import { Search } from '@molecules/search'
 import { ProjectsSlide } from '@molecules/projects-slide'
 import { MainProjectsContainer } from '../styles/globals'
@@ -27,7 +26,6 @@ function Projects() {
             <SweetProject key={project?.id} project={project} />
           ))}
         </ProjectsContentStyled>
-        <Footer />
       </Wrapper>
     </MainProjectsContainer>
   )

@@ -24,7 +24,7 @@ export const StackSectionStyled = styled.section`
   }
 
   @media screen and (min-width: 1024px) {
-    margin: 14.5rem 0 10rem 0;
+    margin: 14.5rem 0 8rem 0;
   }
 `
 
