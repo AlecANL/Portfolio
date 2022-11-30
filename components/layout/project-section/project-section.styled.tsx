@@ -23,6 +23,8 @@ export const ProjectSectionStyled = styled.section`
         right: 40px;
       }
     }
+
+    margin: 80px 0 100px 0;
   }
 
   @media screen and (min-width: 1024px) {
@@ -37,12 +39,61 @@ export const ProjectSectionStyled = styled.section`
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+
+  .link {
+    margin-top: 4rem;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      color: #fff;
+      font-size: 22px;
+      font-family: Matter;
+      font-weight: bold;
+    }
+
+
+    .another-circle {
+      cursor:pointer;
+      stroke-dasharray: 95;
+      stroke-dashoffset: 0;
+      transition: stroke-dashoffset 900ms ease;
+      transform-origin: 0px 0px 0px;
+    }
+
+    a:hover .another-circle {
+      stroke-dashoffset: -95px;
+      stroke: #fff;
+      transform="translate(5,14)"
+    }
+
+    a:hover svg {
+      transform: translate(10px, -25%);
+    }
+
+    svg {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: -5%;
+      left: 58%;
+      transform: translateY(-25%);
+      stroke: #fff;
+      transition: transform .3s ease;
+    }
+
+    circle {
+      stroke: hsl(233, 5%, 31%);
+    }
+  }
 `
 
 export const ProjectSectionCardsContainer = styled.div`
   @media screen and (min-width: 1024px) {
-    article {
-      margin: 150px 0;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
   }
 `

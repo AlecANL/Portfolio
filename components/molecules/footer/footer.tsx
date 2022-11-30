@@ -9,7 +9,7 @@ export function Footer() {
       <Wrapper>
         <FooterStyled>
           {socialMediaLinks.map(link => (
-            <CustomLink key={link.id} url={link.url}>
+            <CustomLink key={link.id} url={link.url} isOpenNewTab>
               <FooterStyledIcons width={24} height={24} src={link?.icon} alt={`${link?.name}`} />
               <span>{link?.name ?? 'undefined'}</span>
             </CustomLink>

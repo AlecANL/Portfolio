@@ -45,11 +45,12 @@ export function CardProject(props: ICardProjectProps) {
             ))}
           </CardTagContent>
           <CardProjectButtons>
-            <CustomLink className='primary' url={repository}>
-              {currentLanguage['link:code']}
+            <CustomLink className='primary' url={demo} isOpenNewTab>
+              <span>{currentLanguage['link:live-demo']}</span>
+              <i className='icon-link'></i>
             </CustomLink>
-            <CustomLink className='secondary' url={demo}>
-              {currentLanguage['link:live-demo']}
+            <CustomLink className='secondary' url={repository} isOpenNewTab>
+              {currentLanguage['link:code']}
             </CustomLink>
           </CardProjectButtons>
         </CardProjectDescription>

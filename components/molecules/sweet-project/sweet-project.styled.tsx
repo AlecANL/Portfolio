@@ -74,10 +74,7 @@ export const SweetProjectStyled = styled.article`
 
   .secondary {
     width: 100%;
-    /* max-width: 180px; */
     justify-content: center;
-    /* align-self: center; */
-    /* align-self: flex-end; */
     text-align: right;
     color: hsl(0, 0%, 93%);
     transition: color 0.3s ease;

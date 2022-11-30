@@ -59,14 +59,46 @@ export const CardProjectButtons = styled.div`
   }
 
   .primary {
-    border: 2px solid transparent;
-    background-color: ${({ theme }) => theme['just-white']};
-    color: ${({ theme }) => theme['black-currant']};
+    justify-content: center;
+    text-align: center;
+    background: #fff;
+    color: #000;
+    border: 1px solid transparent;
+    transition: box-shadow 0.3s ease;
+
+    i {
+      font-size: 1rem;
+    }
+  }
+
+  .primary,
+  .secondary {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    padding: 1rem 2.5rem;
+
+    span {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  }
+
+  .primary:hover {
+    border: 1px solid hsl(0, 0%, 12%);
+    box-shadow: 0 0 0 3px hsl(0, 0%, 12%), 0 0 0 5px rgba(255, 255, 255, 0.92);
   }
 
   .secondary {
-    border: 2px solid ${({ theme }) => theme['just-white']};
+    border: 3px solid hsl(233, 5%, 31%);
+    transition: 0.3s ease;
     color: ${({ theme }) => theme['just-white']};
+  }
+
+  .secondary:hover {
+    border-color: transparent;
   }
 
   @media screen and (min-width: 768px) {
