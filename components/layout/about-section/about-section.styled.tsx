@@ -41,9 +41,15 @@ export const AboutSectionDescription = styled.div`
     text-transform: capitalize;
   }
 
+  p {
+    font-family: Matter;
+    font-size: 24px;
+    color: ${({ theme }) => theme['davys-gray']};
+  }
+
   @media screen and (min-width: 768px) {
     p {
-      font: var(--body2-regular-desktop);
+      /* font: var(--body2-regular-desktop); */
     }
   }
 `

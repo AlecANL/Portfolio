@@ -70,7 +70,7 @@ export const StackImageContent = styled.div`
     justify-content: flex-start;
     gap: 1rem;
     padding: 0.5rem 1rem 0.5rem 0.75rem;
-    background: hsl(230, 12%, 20%);
+    background: ${({ theme }) => theme['darken-soft-gray']};
   }
 
   span:first-child {
@@ -83,5 +83,6 @@ export const StackImageContent = styled.div`
     font-family: Matter;
     text-transform: uppercase;
     letter-spacing: 1.5px;
+    color: ${({ theme }) => theme['just-white']};
   }
 `

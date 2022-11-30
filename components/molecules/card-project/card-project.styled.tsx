@@ -37,6 +37,7 @@ export const CardProjectDescription = styled.div`
       font-size: 1.25rem;
       z-index: 1;
       position: relative;
+      color: ${({ theme }) => theme['davys-gray']};
     }
   }
 `

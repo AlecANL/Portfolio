@@ -48,7 +48,7 @@ export const ProjectSectionStyled = styled.section`
       justify-content: center;
       align-items: center;
       position: relative;
-      color: #fff;
+      color: ${({ theme }) => theme['just-white']};
       font-size: 22px;
       font-family: Matter;
       font-weight: bold;
@@ -65,7 +65,7 @@ export const ProjectSectionStyled = styled.section`
 
     a:hover .another-circle {
       stroke-dashoffset: -95px;
-      stroke: #fff;
+      stroke:  ${({ theme }) => theme['just-white']};
       transform="translate(5,14)"
     }
 
@@ -80,7 +80,7 @@ export const ProjectSectionStyled = styled.section`
       top: -5%;
       left: 58%;
       transform: translateY(-25%);
-      stroke: #fff;
+      stroke:  ${({ theme }) => theme['just-white']};
       transition: transform .3s ease;
     }
 

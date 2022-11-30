@@ -32,7 +32,7 @@ export const NavigationListStyled = styled.ul<INavigationStyled>`
   li {
     display: flex;
     align-items: center;
-    color: var(--secondary);
+    color: ${({ theme }) => theme['davys-gray']};
   }
 
   margin: 0;
@@ -51,7 +51,8 @@ export const NavigationListStyled = styled.ul<INavigationStyled>`
   }
 
   a[aria-current] {
-    color: #fff;
+    color: ${({ theme }) => theme['just-white']};
+    text-decoration: underline;
   }
 
   a:hover {

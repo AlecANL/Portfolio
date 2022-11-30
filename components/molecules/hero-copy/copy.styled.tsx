@@ -14,12 +14,17 @@ export const CopyStyled = styled.div`
 
   .name {
     color: ${({ theme }) => theme['just-white']};
-    padding: .5rem 0;
+    padding: 0.5rem 0;
   }
 
   p {
     margin-block: 1.5rem 1rem;
     text-align: center;
+    color: ${({ theme }) => theme['davys-gray']};
+  }
+
+  h4 {
+    color: ${({ theme }) => theme['davys-gray']};
   }
 
   .position {

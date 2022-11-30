@@ -12,12 +12,21 @@ declare module 'styled-components' {
     'black-currant': string
     'soft-gray': string
     'soft-black': string
+    'darken-soft-gray': string
+    'davys-gray': string
+    'just-black': string
+    white: string
   }
 }
 
 export const lightTheme = {
-  'body-color': '#ffff',
-  'just-white': '#2f2d39',
+  'body-color': 'hsl(0, 0%, 100%)',
+  'just-white': 'hsl(0, 0%, 0%)',
+  'darken-soft-gray': 'hsl(0, 0%, 94%)',
+  'davys-gray': 'hsl(227, 8%, 35%)',
+  'just-black': 'hsl(0, 0%, 100%)',
+  white: 'hsl(0, 0%, 100%)',
+
   logan: '#A9ADC1',
   'just-orange': '#ffff',
   'just-pink': '#ffff',
@@ -29,10 +38,13 @@ export const lightTheme = {
 }
 
 export const darkTheme = {
-  'body-color': '#1f2028',
-  // 'body-color': '#161616',
-  // 'body-color': '#201d28',
-  'just-white': '#fff',
+  'body-color': 'hsl(233, 13%, 14%)',
+  'just-white': 'hsl(0, 0%, 100%)',
+  'darken-soft-gray': 'hsl(230, 12%, 20%)',
+  'davys-gray': 'hsl(230, 16%, 71%)',
+  'just-black': 'hsl(0, 0%, 0%)',
+  white: 'hsl(0, 0%, 100%)',
+
   logan: '#a9adc1',
   'just-orange': '#f77062',
   'just-pink': '#fe5196',
@@ -216,7 +228,7 @@ export const MainProjectsContainer = styled.main`
     position: relative;
     margin: 80px 0 30px 0;
     text-align: left;
-    color: #fff;
+    color: ${({ theme }) => theme['just-white']};
 
     &::before {
       content: '';
@@ -226,7 +238,7 @@ export const MainProjectsContainer = styled.main`
       left: 0;
       bottom: -4px;
       border-radius: 4px;
-      background: #fff;
+      background: ${({ theme }) => theme['just-white']};
     }
   }
 

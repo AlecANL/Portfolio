@@ -6,18 +6,15 @@ export const SweetProjectStyled = styled.article`
   justify-content: space-between;
   border-radius: 20px;
   padding: 2rem;
-  background: hsl(229, 11%, 20%);
+  background-color: ${({ theme }) => theme['darken-soft-gray']};
   font-family: Matter;
-  /* padding: 48px; */
-  /* background: hsl(0, 0%, 12%); */
 
   h3.heading-h3 {
-    color: #fff;
+    color: ${({ theme }) => theme['just-white']};
     text-align: start;
     font-family: Matter;
     font-weight: 500;
     font-size: 25px;
-    /* font-size: 2rem; */
     margin-top: 12px;
   }
 
@@ -26,8 +23,7 @@ export const SweetProjectStyled = styled.article`
   }
 
   p {
-    color: hsl(230, 16%, 71%);
-    /* color: hsl(0, 0%, 58%); */
+    color: ${({ theme }) => theme['davys-gray']};
     font-size: 18px;
     line-height: 28px;
     margin: 12px 0 1.5rem 0;
@@ -62,8 +58,8 @@ export const SweetProjectStyled = styled.article`
     border-radius: 100px;
     width: 100%;
     text-align: center;
-    background: #fff;
-    color: #000;
+    background: ${({ theme }) => theme['just-white']};
+    color: ${({ theme }) => theme['just-black']};
     border: 1px solid transparent;
     transition: box-shadow 0.3s ease;
 
@@ -76,7 +72,7 @@ export const SweetProjectStyled = styled.article`
     width: 100%;
     justify-content: center;
     text-align: right;
-    color: hsl(0, 0%, 93%);
+    color: ${({ theme }) => theme['just-white']};
     transition: color 0.3s ease;
 
     &:hover {
@@ -94,13 +90,11 @@ export const SweetProjectStyled = styled.article`
   }
 
   .primary:hover {
-    border: 1px solid hsl(0, 0%, 12%);
-    box-shadow: 0 0 0 3px hsl(0, 0%, 12%), 0 0 0 5px rgba(255, 255, 255, 0.92);
+    border: 1px solid ${({ theme }) => theme['darken-soft-gray']};
+    box-shadow: 0 0 0 3px ${({ theme }) => theme['darken-soft-gray']}, 0 0 0 5px ${({ theme }) => theme['just-white']};
   }
 
   @media screen and (min-width: 400px) {
-    /* padding: 48px; */
-
     .primary {
       max-width: 180px;
     }
