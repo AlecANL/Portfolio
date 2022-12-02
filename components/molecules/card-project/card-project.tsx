@@ -17,7 +17,7 @@ import patternImage from '/public/assets/images/circle-pattern.png'
 
 export function CardProject(props: ICardProjectProps) {
   const { cover, repository, demo, title, description, tagStack, id, pattern } = props?.project ?? {}
-  const { isShowCount } = props ?? {}
+  const { isShowCount, isShowPattern, isShowStack } = props ?? {}
   const { currentLanguage } = useLanguage(en, es)
 
   function getPositionProject(id: string) {
@@ -27,7 +27,7 @@ export function CardProject(props: ICardProjectProps) {
   return (
     <>
       <CardProjectStyled>
-        {pattern && <PatternImage src={patternImage.src} alt='pattern circles' />}
+        {isShowPattern && <PatternImage src={patternImage.src} alt='pattern circles' />}
         <Image
           src={cover.url}
           alt={`${currentLanguage[title]} cover for project`}
@@ -39,18 +39,21 @@ export function CardProject(props: ICardProjectProps) {
             {isShowCount && getPositionProject(id)} {currentLanguage[title]}
           </Heading>
           {description && <Paragraph>{currentLanguage[description]}</Paragraph>}
-          <CardTagContent>
-            {tagStack.map(tag => (
-              <TechTag key={tag.id} name={tag.name} icon={tag.icon} id={tag.id} />
-            ))}
-          </CardTagContent>
+          {isShowStack && (
+            <CardTagContent>
+              {tagStack.map(tag => (
+                <TechTag key={tag.id} name={tag.name} icon={tag.icon} id={tag.id} />
+              ))}
+            </CardTagContent>
+          )}
           <CardProjectButtons>
-            <CustomLink className='primary' url={demo} isOpenNewTab>
+            <CustomLink className='link-primary' url={demo} isOpenNewTab>
               <span>{currentLanguage['link:live-demo']}</span>
-              <i className='icon-link'></i>
+              <i className='icon-link project-link'></i>
             </CustomLink>
-            <CustomLink className='secondary' url={repository} isOpenNewTab>
-              {currentLanguage['link:code']}
+            <CustomLink className='link-secondary project-link' url={repository} isOpenNewTab>
+              <span>{currentLanguage['link:code']}</span>
+              <i className='icon-github'></i>
             </CustomLink>
           </CardProjectButtons>
         </CardProjectDescription>

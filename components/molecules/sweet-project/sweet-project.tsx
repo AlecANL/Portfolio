@@ -25,7 +25,7 @@ export function SweetProject(props: ISweetProjectProps) {
             <span>Demo</span>
             <i className='icon-link'></i>
           </CustomLink>
-          <CustomLink className='secondary' url='/'>
+          <CustomLink className='secondary' url={`/project/${project?.id}`}>
             <span>Read more</span>
             <i className='icon-arrow-left1'></i>
           </CustomLink>

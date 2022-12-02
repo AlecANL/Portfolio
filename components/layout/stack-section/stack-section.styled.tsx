@@ -70,7 +70,14 @@ export const StackImageContent = styled.div`
     justify-content: flex-start;
     gap: 1rem;
     padding: 0.5rem 1rem 0.5rem 0.75rem;
+    border: 1px solid transparent;
+    transition: box-shadow 0.3s ease;
     background: ${({ theme }) => theme['darken-soft-gray']};
+  }
+
+  & > div:hover {
+    border: 1px solid ${({ theme }) => theme['darken-soft-gray']};
+    box-shadow: 0 0 0 4px ${({ theme }) => theme['darken-soft-gray']}, 0 0 0 6px hsl(0, 100%, 64%);
   }
 
   span:first-child {

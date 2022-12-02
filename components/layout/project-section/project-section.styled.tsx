@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 export const ProjectSectionStyled = styled.section`
+  margin: 80px 0 100px 0;
+
   @media screen and (min-width: 768px) {
     article:nth-child(even) {
       & > img {
@@ -91,9 +93,10 @@ export const ProjectSectionStyled = styled.section`
 `
 
 export const ProjectSectionCardsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
   @media screen and (min-width: 1024px) {
-    display: flex;
-    flex-direction: column;
     gap: 150px;
   }
 `

@@ -1,0 +1,200 @@
+[
+  {
+    "id": "1",
+    "title": "title:all_notes",
+    "description": "project:all_notes",
+    "pattern": true,
+    "cover": {
+      "url": "/assets/images/project-1.png",
+      "width": 745,
+      "height": 494
+    },
+    "tagStack": [
+      {
+        "id": "1",
+        "name": "typescript",
+        "icon": "/assets/icons/tag-stack/typescript-icon.svg"
+      },
+
+      {
+        "id": "2",
+        "name": "styled components",
+        "icon": "/assets/icons/tag-stack/styled-components-icon.svg"
+      },
+
+      {
+        "id": "3",
+        "name": "nextjs",
+        "icon": "/assets/icons/tag-stack/nextjs-icon.svg"
+      }
+    ],
+
+    "repository": "https://github.com/AlecANL/all-notes",
+    "demo": "https://all-notes-js4ypaybw-alecanl.vercel.app/"
+  },
+  {
+    "id": "2",
+    "title": "title:all_notes",
+    "description": "project:all_notes",
+    "pattern": true,
+    "cover": {
+      "url": "/assets/images/project-1.png",
+      "width": 745,
+      "height": 494
+    },
+    "tagStack": [
+      {
+        "id": "1",
+        "name": "typescript",
+        "icon": "/assets/icons/tag-stack/typescript-icon.svg"
+      },
+
+      {
+        "id": "2",
+        "name": "styled components",
+        "icon": "/assets/icons/tag-stack/styled-components-icon.svg"
+      },
+
+      {
+        "id": "3",
+        "name": "nextjs",
+        "icon": "/assets/icons/tag-stack/nextjs-icon.svg"
+      }
+    ],
+
+    "repository": "https://github.com/AlecANL/all-notes",
+    "demo": "https://all-notes-js4ypaybw-alecanl.vercel.app/"
+  },
+  {
+    "id": "3",
+    "title": "title:all_notes",
+    "description": "project:all_notes",
+    "pattern": true,
+    "cover": {
+      "url": "/assets/images/project-1.png",
+      "width": 745,
+      "height": 494
+    },
+    "tagStack": [
+      {
+        "id": "1",
+        "name": "typescript",
+        "icon": "/assets/icons/tag-stack/typescript-icon.svg"
+      },
+
+      {
+        "id": "2",
+        "name": "styled components",
+        "icon": "/assets/icons/tag-stack/styled-components-icon.svg"
+      },
+
+      {
+        "id": "3",
+        "name": "nextjs",
+        "icon": "/assets/icons/tag-stack/nextjs-icon.svg"
+      }
+    ],
+
+    "repository": "https://github.com/AlecANL/all-notes",
+    "demo": "https://all-notes-js4ypaybw-alecanl.vercel.app/"
+  },
+  {
+    "id": "4",
+    "title": "title:all_notes",
+    "description": "project:all_notes",
+    "pattern": true,
+    "cover": {
+      "url": "/assets/images/project-1.png",
+      "width": 745,
+      "height": 494
+    },
+    "tagStack": [
+      {
+        "id": "1",
+        "name": "typescript",
+        "icon": "/assets/icons/tag-stack/typescript-icon.svg"
+      },
+
+      {
+        "id": "2",
+        "name": "styled components",
+        "icon": "/assets/icons/tag-stack/styled-components-icon.svg"
+      },
+
+      {
+        "id": "3",
+        "name": "nextjs",
+        "icon": "/assets/icons/tag-stack/nextjs-icon.svg"
+      }
+    ],
+
+    "repository": "https://github.com/AlecANL/all-notes",
+    "demo": "https://all-notes-js4ypaybw-alecanl.vercel.app/"
+  },
+  {
+    "id": "5",
+    "title": "title:all_notes",
+    "description": "project:all_notes",
+    "pattern": true,
+    "cover": {
+      "url": "/assets/images/project-1.png",
+      "width": 745,
+      "height": 494
+    },
+    "tagStack": [
+      {
+        "id": "1",
+        "name": "typescript",
+        "icon": "/assets/icons/tag-stack/typescript-icon.svg"
+      },
+
+      {
+        "id": "2",
+        "name": "styled components",
+        "icon": "/assets/icons/tag-stack/styled-components-icon.svg"
+      },
+
+      {
+        "id": "3",
+        "name": "nextjs",
+        "icon": "/assets/icons/tag-stack/nextjs-icon.svg"
+      }
+    ],
+
+    "repository": "https://github.com/AlecANL/all-notes",
+    "demo": "https://all-notes-js4ypaybw-alecanl.vercel.app/"
+  },
+  {
+    "id": "6",
+    "title": "title:all_notes",
+    "description": "project:all_notes",
+    "pattern": true,
+    "cover": {
+      "url": "/assets/images/project-1.png",
+      "width": 745,
+      "height": 494
+    },
+    "tagStack": [
+      {
+        "id": "1",
+        "name": "typescript",
+        "icon": "/assets/icons/tag-stack/typescript-icon.svg"
+      },
+
+      {
+        "id": "2",
+        "name": "styled components",
+        "icon": "/assets/icons/tag-stack/styled-components-icon.svg"
+      },
+
+      {
+        "id": "3",
+        "name": "nextjs",
+        "icon": "/assets/icons/tag-stack/nextjs-icon.svg"
+      }
+    ],
+
+    "repository": "https://github.com/AlecANL/all-notes",
+    "demo": "https://all-notes-js4ypaybw-alecanl.vercel.app/"
+  }
+]

@@ -211,6 +211,52 @@ a {
   margin: auto;
 }
 
+
+
+
+  .link-primary {
+    justify-content: center;
+    text-align: center;
+    background: ${({ theme }) => theme['just-white']};
+    color: ${({ theme }) => theme['just-black']};
+    border: 1px solid transparent;
+    transition: box-shadow 0.3s ease;
+
+    i {
+      font-size: 1rem;
+    }
+  }
+
+  .link-primary,
+  .link-secondary {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    padding: 1rem 2.5rem;
+
+    span {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  }
+
+  .link-primary:hover {
+    border: 1px solid hsl(0, 0%, 12%);
+    box-shadow: 0 0 0 3px hsl(0, 0%, 12%), 0 0 0 5px rgba(255, 255, 255, 0.92);
+  }
+
+  .link-secondary {
+    border: 3px solid hsl(233, 5%, 31%);
+    transition: 0.3s ease;
+    color: ${({ theme }) => theme['just-white']};
+  }
+
+  .link-secondary:hover {
+    border-color: transparent;
+  }
+
 @media screen and (min-width: 64rem) {
     body {
         font: var(--body1-regular-desktop);

@@ -1,6 +1,8 @@
 export interface ICardProjectProps {
   project: ICardProject
   isShowCount?: boolean
+  isShowPattern?: boolean
+  isShowStack?: boolean
 }
 
 export interface ITagStack {

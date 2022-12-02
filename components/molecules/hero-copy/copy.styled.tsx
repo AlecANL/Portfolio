@@ -34,6 +34,18 @@ export const CopyStyled = styled.div`
     background-clip: text;
   }
 
+  button {
+    padding: 1rem 2.5rem;
+    border: 1px solid transparent;
+    transition: box-shadow 0.3s ease;
+    border-radius: 100px;
+  }
+
+  button:hover {
+    border: 1px solid ${({ theme }) => theme['darken-soft-gray']};
+    box-shadow: 0 0 0 3px ${({ theme }) => theme['darken-soft-gray']}, 0 0 0 5px ${({ theme }) => theme['just-white']};
+  }
+
   @media screen and (min-width: 768px) {
     align-items: flex-start;
     align-self: flex-start;

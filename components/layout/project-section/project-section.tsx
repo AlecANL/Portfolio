@@ -30,7 +30,7 @@ export function ProjectSection(props: IProjectSectionProps) {
 
         <ProjectSectionCardsContainer>
           {projects.map(project => (
-            <CardProject key={project.id} project={project} isShowCount />
+            <CardProject key={project.id} project={project} isShowCount isShowPattern isShowStack />
           ))}
         </ProjectSectionCardsContainer>
         <div className='link'>
