@@ -29,4 +29,11 @@ export interface ICardProject {
   demo: string
   pattern: boolean
   copy?: string
+  details?: IDetailProject
+}
+
+export interface IDetailProject {
+  stack: ITagStack[]
+  detail: string[]
+  requirements: string[]
 }

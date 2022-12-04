@@ -23,5 +23,6 @@
   "label:comment": "comment",
   "send": "send",
   "devFinder": "devFinder",
-  "subtitle:projects": "Project's and work's"
+  "subtitle:projects": "Project's and work's",
+  "label:demo": "Demo"
 }

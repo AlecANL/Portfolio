@@ -5,12 +5,18 @@ import { ICardProject } from '@models/project.interface'
 import Image from 'next/image'
 import { SweetProjectStyled } from './sweet-project.styled'
 
+import en from '@i18n/common/common-en.json'
+import es from '@i18n/common/common-es.json'
+import { useLanguage } from '../../../hooks/useLanguage'
+
 interface ISweetProjectProps {
   project: ICardProject
 }
 
 export function SweetProject(props: ISweetProjectProps) {
   const { project } = props ?? {}
+
+  const { currentLanguage } = useLanguage(en, es)
 
   return (
     <>
@@ -21,12 +27,12 @@ export function SweetProject(props: ISweetProjectProps) {
           <Paragraph>{project?.copy}</Paragraph>
         </div>
         <div className='buttons'>
-          <CustomLink className='primary' url='https://google.com' isOpenNewTab>
-            <span>Demo</span>
+          <CustomLink className='primary' url={project.demo} isOpenNewTab>
+            <span>{currentLanguage['label:demo']}</span>
             <i className='icon-link'></i>
           </CustomLink>
-          <CustomLink className='secondary' url={`/project/${project?.id}`}>
-            <span>Read more</span>
+          <CustomLink className='secondary' url={project.repository} isOpenNewTab>
+            <span>{currentLanguage['link:code']}</span>
             <i className='icon-arrow-left1'></i>
           </CustomLink>
         </div>

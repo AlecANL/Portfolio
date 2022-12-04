@@ -30,7 +30,43 @@
     ],
 
     "repository": "https://github.com/AlecANL/all-notes",
-    "demo": "https://all-notes-js4ypaybw-alecanl.vercel.app/"
+    "demo": "https://all-notes-js4ypaybw-alecanl.vercel.app/",
+    "details": {
+      "stack": [
+        {
+          "id": "1",
+          "name": "javascript",
+          "icon": "/assets/icons/tag-stack/typescript-icon.svg",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "id": "2",
+          "name": "TailwindCSS",
+          "icon": "/assets/icons/tag-stack/tailwind-icon.svg",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "id": "3",
+          "name": "Angular",
+          "icon": "/assets/icons/tag-stack/angular-icon.svg",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "id": "4",
+          "name": "Typescript",
+          "icon": "/assets/icons/tag-stack/typescript-icon.svg",
+          "width": 20,
+          "height": 20
+        }
+      ],
+      "detail": [
+        "Aplicación que te ayudará a escribir tus notas en formato MarkDown y ver como lucirá en tiempo real, además de poder compartirlas."
+      ],
+      "requirements": [" Añadir animaciones", "Accesibilidad como prioridad", "Almacenar notas e imagénes."]
+    }
   },
   {
     "id": "2",
@@ -63,7 +99,43 @@
     ],
 
     "repository": "https://github.com/AlecANL/all-notes",
-    "demo": "https://all-notes-js4ypaybw-alecanl.vercel.app/"
+    "demo": "https://all-notes-js4ypaybw-alecanl.vercel.app/",
+    "details": {
+      "stack": [
+        {
+          "id": "1",
+          "name": "javascript",
+          "icon": "/assets/icons/tag-stack/typescript-icon.svg",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "id": "2",
+          "name": "TailwindCSS",
+          "icon": "/assets/icons/tag-stack/tailwind-icon.svg",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "id": "3",
+          "name": "Angular",
+          "icon": "/assets/icons/tag-stack/angular-icon.svg",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "id": "4",
+          "name": "Typescript",
+          "icon": "/assets/icons/tag-stack/typescript-icon.svg",
+          "width": 20,
+          "height": 20
+        }
+      ],
+      "detail": [
+        "Aplicación que te ayudará a escribir tus notas en formato MarkDown y ver como lucirá en tiempo real, además de poder compartirlas."
+      ],
+      "requirements": [" Añadir animaciones", "Accesibilidad como prioridad", "Almacenar notas e imagénes."]
+    }
   },
   {
     "id": "3",
@@ -96,7 +168,43 @@
     ],
 
     "repository": "https://github.com/AlecANL/all-notes",
-    "demo": "https://all-notes-js4ypaybw-alecanl.vercel.app/"
+    "demo": "https://all-notes-js4ypaybw-alecanl.vercel.app/",
+    "details": {
+      "stack": [
+        {
+          "id": "1",
+          "name": "javascript",
+          "icon": "/assets/icons/tag-stack/typescript-icon.svg",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "id": "2",
+          "name": "TailwindCSS",
+          "icon": "/assets/icons/tag-stack/tailwind-icon.svg",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "id": "3",
+          "name": "Angular",
+          "icon": "/assets/icons/tag-stack/angular-icon.svg",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "id": "4",
+          "name": "Typescript",
+          "icon": "/assets/icons/tag-stack/typescript-icon.svg",
+          "width": 20,
+          "height": 20
+        }
+      ],
+      "detail": [
+        "Aplicación que te ayudará a escribir tus notas en formato MarkDown y ver como lucirá en tiempo real, además de poder compartirlas."
+      ],
+      "requirements": [" Añadir animaciones", "Accesibilidad como prioridad", "Almacenar notas e imagénes."]
+    }
   },
   {
     "id": "4",
@@ -129,7 +237,43 @@
     ],
 
     "repository": "https://github.com/AlecANL/all-notes",
-    "demo": "https://all-notes-js4ypaybw-alecanl.vercel.app/"
+    "demo": "https://all-notes-js4ypaybw-alecanl.vercel.app/",
+    "details": {
+      "stack": [
+        {
+          "id": "1",
+          "name": "javascript",
+          "icon": "/assets/icons/tag-stack/typescript-icon.svg",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "id": "2",
+          "name": "TailwindCSS",
+          "icon": "/assets/icons/tag-stack/tailwind-icon.svg",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "id": "3",
+          "name": "Angular",
+          "icon": "/assets/icons/tag-stack/angular-icon.svg",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "id": "4",
+          "name": "Typescript",
+          "icon": "/assets/icons/tag-stack/typescript-icon.svg",
+          "width": 20,
+          "height": 20
+        }
+      ],
+      "detail": [
+        "Aplicación que te ayudará a escribir tus notas en formato MarkDown y ver como lucirá en tiempo real, además de poder compartirlas."
+      ],
+      "requirements": [" Añadir animaciones", "Accesibilidad como prioridad", "Almacenar notas e imagénes."]
+    }
   },
   {
     "id": "5",
@@ -162,7 +306,43 @@
     ],
 
     "repository": "https://github.com/AlecANL/all-notes",
-    "demo": "https://all-notes-js4ypaybw-alecanl.vercel.app/"
+    "demo": "https://all-notes-js4ypaybw-alecanl.vercel.app/",
+    "details": {
+      "stack": [
+        {
+          "id": "1",
+          "name": "javascript",
+          "icon": "/assets/icons/tag-stack/typescript-icon.svg",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "id": "2",
+          "name": "TailwindCSS",
+          "icon": "/assets/icons/tag-stack/tailwind-icon.svg",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "id": "3",
+          "name": "Angular",
+          "icon": "/assets/icons/tag-stack/angular-icon.svg",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "id": "4",
+          "name": "Typescript",
+          "icon": "/assets/icons/tag-stack/typescript-icon.svg",
+          "width": 20,
+          "height": 20
+        }
+      ],
+      "detail": [
+        "Aplicación que te ayudará a escribir tus notas en formato MarkDown y ver como lucirá en tiempo real, además de poder compartirlas."
+      ],
+      "requirements": [" Añadir animaciones", "Accesibilidad como prioridad", "Almacenar notas e imagénes."]
+    }
   },
   {
     "id": "6",
@@ -195,6 +375,42 @@
     ],
 
     "repository": "https://github.com/AlecANL/all-notes",
-    "demo": "https://all-notes-js4ypaybw-alecanl.vercel.app/"
+    "demo": "https://all-notes-js4ypaybw-alecanl.vercel.app/",
+    "details": {
+      "stack": [
+        {
+          "id": "1",
+          "name": "javascript",
+          "icon": "/assets/icons/tag-stack/typescript-icon.svg",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "id": "2",
+          "name": "TailwindCSS",
+          "icon": "/assets/icons/tag-stack/tailwind-icon.svg",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "id": "3",
+          "name": "Angular",
+          "icon": "/assets/icons/tag-stack/angular-icon.svg",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "id": "4",
+          "name": "Typescript",
+          "icon": "/assets/icons/tag-stack/typescript-icon.svg",
+          "width": 20,
+          "height": 20
+        }
+      ],
+      "detail": [
+        "Aplicación que te ayudará a escribir tus notas en formato MarkDown y ver como lucirá en tiempo real, además de poder compartirlas."
+      ],
+      "requirements": [" Añadir animaciones", "Accesibilidad como prioridad", "Almacenar notas e imagénes."]
+    }
   }
 ]
