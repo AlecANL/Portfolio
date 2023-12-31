@@ -1,5 +1,8 @@
 {
     "LABEL_LOCALE": "ES",
     "ROUTE_HOME": "/es",
-    "LABEL_HIRE_ME": "Hire me"
+    "LABEL_HIRE_ME": "Hire me",
+    "LABEL_HERO": "👋 Hello, I'm Alexei a <span class='profession'>Fronted Developer.",
+    "LABEL_HERO_DESCRIPTION": "build a creative solutions for a variety of challenges and needs. Focused on the creation of digital products that inspire and engage people."
+
 }

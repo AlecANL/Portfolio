@@ -1,0 +1,125 @@
+<div class='hero-poster'>
+  <div class='gradient'></div>
+  <img
+    class='hero-img'
+    src='/images/rocket.png'
+    alt='hero'
+  />
+
+  <div class='icon angular'>
+    <img
+      src='/tech/angular-icon.svg'
+      alt='angular icon'
+    />
+  </div>
+
+  <div class='icon typescript'>
+    <img
+      src='/tech/typescript-icon.svg'
+      alt='angular icon'
+    />
+  </div>
+
+  <div class='icon vite'>
+    <img
+      src='/tech/vitejs.svg'
+      alt='angular icon'
+    />
+  </div>
+
+  <div class='icon react'>
+    <img
+      src='/tech/react.svg'
+      alt='angular icon'
+    />
+  </div>
+</div>
+
+<style>
+  .hero-poster {
+    position: relative;
+  }
+
+  .icon {
+    position: absolute;
+    z-index: 1;
+
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #282a31;
+    width: 76px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (prefers-reduced-motion: no-preference) {
+      animation: bottomToUp 1s ease-in-out infinite alternate;
+    }
+
+    img {
+      width: 36px;
+    }
+  }
+
+  @keyframes bottomToUp {
+    0% {
+      transform: translateY(0);
+    }
+
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .icon.react {
+    top: 10px;
+    left: 100px;
+  }
+
+  .icon.angular {
+    top: 150px;
+    animation-delay: 0.5s;
+    left: 380px;
+  }
+
+  .icon.vite {
+    top: 150px;
+    left: 50px;
+    animation-delay: 1s;
+  }
+
+  .icon.typescript {
+    top: 460px;
+    left: 200px;
+    animation-delay: 1.5s;
+  }
+
+  .hero-poster {
+    display: none;
+    max-width: 450px;
+
+    img {
+      position: relative;
+      z-index: 1;
+      max-width: 100%;
+    }
+
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .gradient {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 388px;
+    border: 1px solid #000;
+    background: conic-gradient(from 180deg at 50% 50%, #21d4fd 0deg, rgba(183, 33, 255, 0) 360deg);
+    background-blend-mode: overlay;
+    filter: blur(48px);
+  }
+</style>

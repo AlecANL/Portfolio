@@ -1,5 +1,5 @@
 ---
-type LinkVariants = 'primary' | 'secondary' | 'neutral' | 'third';
+type LinkVariants = 'primary' | 'secondary' | 'neutral' | 'third' | 'outline';
 
 interface Props {
   variant?: LinkVariants;
@@ -36,6 +36,16 @@ const radiusClass = `link--radius-${radius}`;
     color: var(--body-color);
   }
 
+  .link--secondary {
+    background-color: var(--absolute-zero);
+    color: var(--just-white);
+  }
+  .link--outline {
+    border: 3px solid var(--absolute-zero);
+    background-color: transparent;
+    color: var(--baby-blue-eyes);
+  }
+
   .link--radius-medium {
     border-radius: 1rem;
   }
@@ -60,5 +70,21 @@ const radiusClass = `link--radius-${radius}`;
     font-weight: 500;
     padding: 8px 20px;
     border-radius: 4px;
+  }
+
+  .hero-social__link {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(195, 182, 182, 0.05);
+    gap: 12px;
+  }
+
+  .hero-btn {
+    padding: 0 28px;
+    min-height: 60px;
+    font-size: 20px;
+  }
+
+  .max-w-2xl {
+    max-width: 256px;
   }
 </style>

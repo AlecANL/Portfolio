@@ -1,5 +1,7 @@
 {
     "LABEL_LOCALE": "EN",
     "ROUTE_HOME": "/",
-    "LABEL_HIRE_ME": "Colaboremos"
+    "LABEL_HIRE_ME": "Colaboremos",
+    "LABEL_HERO": "👋 Hey , soy Alexei, <span class='profession'>desarrollador Frontend</span>",
+    "LABEL_HERO_DESCRIPTION": "Creando soluciones creativas para diversos retos y necesidades. Centrado en la creación de productos digitales que inspiran y atraen a las personas."
 }
