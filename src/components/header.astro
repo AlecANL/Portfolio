@@ -1,0 +1,61 @@
+---
+import Wrapper from '../components/wrapper.astro';
+import { getI18N } from '../i18n';
+import Menu from './menu.astro';
+import MenuIcon from './menu-icon.astro';
+import Logo from './logo.astro';
+import Link from './link.astro';
+import LanguagePicker from './language-picker.astro';
+
+const { currentLocale = 'en' } = Astro;
+
+const i18n = getI18N({
+  currentLocale,
+});
+---
+
+<header>
+  <Wrapper>
+    <div class='header-content'>
+      <Logo />
+      <Menu />
+
+      <div class='right-side'>
+        <LanguagePicker />
+        <Link
+          className='hire-btn'
+          radius='large'
+          variant='third'
+          url='#'
+        >
+          {i18n.LABEL_HIRE_ME}
+        </Link>
+        <MenuIcon />
+      </div>
+    </div>
+  </Wrapper>
+</header>
+
+<style>
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .right-side {
+    display: flex;
+    gap: 12px;
+  }
+</style>
+
+<script>
+  const $button = document.querySelector('button') as HTMLButtonElement;
+  const $nav = document.querySelector('nav') as HTMLElement;
+
+  $button.addEventListener('click', () => {
+    $button.classList.toggle('menu-open');
+    $nav.classList.toggle('show-nav');
+  });
+</script>

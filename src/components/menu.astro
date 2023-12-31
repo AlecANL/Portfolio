@@ -1,0 +1,118 @@
+---
+import menu from '../data/menu.json';
+const currentPath = Astro.url.pathname;
+const { currentLocale = 'en' } = Astro;
+---
+
+<nav>
+  <ul>
+    {
+      menu.map((item) => {
+        const isActiveRoute = currentPath === item.url;
+        return (
+          <li class:list={[isActiveRoute && 'active']}>
+            <a
+              href={item.url}
+              target={item.target}
+            >
+              <span>{item[currentLocale].name}</span>
+              {!isActiveRoute ? (
+                <svg
+                  stroke='currentColor'
+                  fill='none'
+                  stroke-width='2'
+                  viewBox='0 0 24 24'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  class='cursor-pointer text-2xl tablet:text-3xl'
+                  height='1em'
+                  width='1em'
+                  xmlns='http://www.w3.org/2000/svg'
+                >
+                  <>
+                    <path
+                      d='M0 0h24v24H0z'
+                      fill='none'
+                      stroke='none'
+                    />
+                    <path d='M5 12h14M13 18l6-6M13 6l6 6' />
+                  </>
+                </svg>
+              ) : null}
+            </a>
+          </li>
+        );
+      })
+    }
+  </ul>
+</nav>
+
+<style>
+  nav {
+    position: fixed;
+    transform: translateX(100%);
+    transition: transform 0.3s;
+    background-color: var(--body-color);
+    top: 70px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    /* padding: 40px 140px; */
+    padding: 40px 40px;
+
+    @media (min-width: 768px) {
+      position: static;
+      transform: translateX(0%);
+      background-color: transparent;
+      padding: 0;
+      z-index: 0;
+    }
+  }
+
+  nav.show-nav {
+    transform: translateX(0%);
+    z-index: 1;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 2rem;
+    }
+  }
+
+  nav a {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 1.5rem;
+
+    @media (min-width: 768px) {
+      padding: 0;
+      font-size: 1rem;
+    }
+  }
+
+  nav a svg {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  nav li {
+    border-bottom: 1px solid #414b57;
+
+    &.active {
+      color: var(--pale-cornflower-blue);
+    }
+
+    @media (min-width: 768px) {
+      border-bottom: none;
+    }
+  }
+</style>

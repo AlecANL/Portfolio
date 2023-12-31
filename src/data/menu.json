@@ -1,0 +1,32 @@
+[
+    {
+        "url": "/",
+        "es": {
+            "name": "Inicio"
+        },
+        "en": {
+            "name": "Home"
+        },
+        "target": ""
+    },
+    {
+        "url": "/projects",
+        "es": {
+            "name": "Proyectos"
+        },
+        "en": {
+            "name": "Projects"
+        },
+        "target": ""
+    },
+    {
+        "url": "/cv",
+        "es": {
+            "name": "CV"
+        },
+        "en": {
+            "name": "CV"
+        },
+        "target": "_blank"
+    }
+]
