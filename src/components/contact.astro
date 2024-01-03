@@ -1,0 +1,51 @@
+---
+import Link from './link.astro';
+import Wrapper from './wrapper.astro';
+---
+
+<article>
+  <Wrapper>
+    <div class='prefooter-content'>
+      <h1>Let's Create Something Great</h1>
+      <Link
+        radius='medium'
+        className='hero-btn max-w-2xl'
+        variant='secondary'
+        url='https://google.com'
+      >
+        <span>Connect with me</span>
+      </Link>
+    </div>
+  </Wrapper>
+</article>
+
+<style>
+  .prefooter-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  article {
+    position: relative;
+    padding-block: 150px;
+    background-image: url('/pattern/pattern.svg');
+    background-size: cover;
+  }
+  article svg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -30%;
+    z-index: -1;
+  }
+
+  article h1 {
+    margin-inline: auto;
+    font-size: 72px;
+    max-width: 600px;
+    text-wrap: balance;
+    text-align: center;
+  }
+</style>
