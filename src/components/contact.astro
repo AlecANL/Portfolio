@@ -1,4 +1,5 @@
 ---
+import { SOCIAL_MEDIA } from '../const';
 import { getI18N } from '../i18n';
 import Link from './link.astro';
 import Wrapper from './wrapper.astro';
@@ -18,7 +19,7 @@ const i18n = getI18N({
         radius='medium'
         className='hero-btn max-w-2xl'
         variant='secondary'
-        url='https://google.com'
+        url={`mailto:${SOCIAL_MEDIA.MAIL}`}
       >
         <span> {i18n.LABEL_CONNECT_WITH_ME}</span>
       </Link>
@@ -39,6 +40,7 @@ const i18n = getI18N({
     padding-block: 150px;
     background-image: url('/pattern/pattern.svg');
     background-size: cover;
+    background-position: right;
   }
   article svg {
     width: 100%;
@@ -50,7 +52,7 @@ const i18n = getI18N({
 
   article h1 {
     margin-inline: auto;
-    font-size: 72px;
+    font-size: clamp(2.25rem, -0.5625rem + 9vw, 4.5rem);
     max-width: 600px;
     text-wrap: balance;
     text-align: center;

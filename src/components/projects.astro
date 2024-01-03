@@ -29,19 +29,27 @@ const i18n = getI18N({
   }
 
   .projects-content {
-    padding: 64px 0;
+    padding: 2rem 0;
+
+    @media (min-widrt: 768px) {
+      padding: 64px 0;
+    }
   }
 
   .bento-grid {
     display: grid;
-    grid-template-columns: repeat(10, minmax(0, 1fr));
     grid-auto-rows: 30rem;
-    gap: 1.5rem;
+    row-gap: 1.5rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(10, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
   }
 
   h3 {
     line-height: 84px;
-    font-size: 36px;
+    font-size: clamp(1.25rem, 0rem + 4vw, 2.25rem);
     margin-block: 52px;
     color: var(--just-white);
   }

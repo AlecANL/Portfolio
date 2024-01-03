@@ -13,8 +13,8 @@ export const PROJECTS = [
         },
         image: '/projects/devjobs-cover.png',
         stack: [],
-        repository: "https://github.com",
-        demo: "https://github.com"
+        repository: "https://github.com/AlecANL/devjobs-v1",
+        demo: "https://devjobs-v1.vercel.app/"
     },
     {
         id: 1,
@@ -30,8 +30,8 @@ export const PROJECTS = [
         },
         image: '/projects/clock-cover.png',
         stack: [],
-        repository: "https://github.com",
-        demo: "https://github.com"
+        repository: "https://github.com/AlecANL/clock-app",
+        demo: "https://clock-app-alecanl.vercel.app/"
     },
     {
         id: 1,
@@ -47,8 +47,8 @@ export const PROJECTS = [
         },
         image: '/projects/pomodoro-cover.png',
         stack: [],
-        repository: "https://github.com",
-        demo: "https://github.com"
+        repository: "https://github.com/AlecANL/pomodoro-v1",
+        demo: "https://pomodoro-v1.vercel.app/"
     },
     {
         id: 1,
@@ -64,7 +64,7 @@ export const PROJECTS = [
         },
         image: '/projects/devfinder-cover.png',
         stack: [],
-        repository: "https://github.com",
-        demo: "https://github.com"
+        repository: "https://github.com/AlecANL/devfinder",
+        demo: "https://devfinder-v1.netlify.app/"
     },
 ]

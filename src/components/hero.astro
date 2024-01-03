@@ -1,4 +1,5 @@
 ---
+import { SOCIAL_MEDIA } from '../const';
 import { getI18N } from '../i18n';
 import Link from './link.astro';
 import Poster from './poster.astro';
@@ -25,7 +26,7 @@ const i18n = getI18N({
           <Link
             className='hero-social__link max-w-2xl'
             radius='large'
-            url='https://github.com'
+            url={SOCIAL_MEDIA.LINKEDIN}
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -55,7 +56,7 @@ const i18n = getI18N({
           <Link
             className='hero-social__link max-w-2xl'
             radius='large'
-            url='https://github.com'
+            url={SOCIAL_MEDIA.GITHUB}
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -89,7 +90,7 @@ const i18n = getI18N({
             className='hero-btn max-w-2xl'
             target='_blank'
             radius='medium'
-            url='https://google.com'
+            url={`mailto:${SOCIAL_MEDIA.MAIL}`}
             variant='secondary'
           >
             {i18n.LABEL_WORK_WITH_ME}
@@ -168,9 +169,12 @@ const i18n = getI18N({
     gap: 2rem;
 
     @media (min-width: 768px) {
-      flex-direction: row;
       justify-content: space-between;
       align-items: center;
+    }
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
     }
   }
 </style>

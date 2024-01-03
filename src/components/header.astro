@@ -6,6 +6,7 @@ import MenuIcon from './menu-icon.astro';
 import Logo from './logo.astro';
 import Link from './link.astro';
 import LanguagePicker from './language-picker.astro';
+import { SOCIAL_MEDIA } from '../const';
 
 const { currentLocale = 'en' } = Astro;
 
@@ -26,7 +27,7 @@ const i18n = getI18N({
           className='hire-btn'
           radius='large'
           variant='third'
-          url='mailto:test@test.com'
+          url={`mailto:${SOCIAL_MEDIA.MAIL}`}
         >
           {i18n.LABEL_HIRE_ME}
         </Link>
