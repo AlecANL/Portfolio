@@ -1,19 +1,26 @@
 ---
+import { getI18N } from '../i18n';
 import Link from './link.astro';
 import Wrapper from './wrapper.astro';
+
+const { currentLocale = 'en' } = Astro;
+
+const i18n = getI18N({
+  currentLocale,
+});
 ---
 
 <article>
   <Wrapper>
     <div class='prefooter-content'>
-      <h1>Let's Create Something Great</h1>
+      <h1>{i18n.LABEL_CONTACT_SECTION}</h1>
       <Link
         radius='medium'
         className='hero-btn max-w-2xl'
         variant='secondary'
         url='https://google.com'
       >
-        <span>Connect with me</span>
+        <span> {i18n.LABEL_CONNECT_WITH_ME}</span>
       </Link>
     </div>
   </Wrapper>

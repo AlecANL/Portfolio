@@ -1,0 +1,155 @@
+---
+interface Props {
+  project: {
+    name: string;
+    image: string;
+    repository: string;
+    demo: string;
+    smallDescription: {
+      [key: string]: string;
+    };
+    description: {
+      en: string;
+      es: string;
+    };
+  };
+}
+
+import Link from './link.astro';
+
+const { currentLocale = 'en' } = Astro;
+const { project } = Astro.props;
+---
+
+<article>
+  <div
+    class='cover'
+    style={{
+      backgroundImage: `url('${project.image}')`,
+    }}
+  >
+  </div>
+  <div class='card-content'>
+    <div class='card-head'>
+      <h2>{project.name}</h2>
+      <div class='card-links'>
+        <Link
+          className='p-inline-0'
+          url={project.repository}
+          target='_blank'
+        >
+          <img
+            width='30'
+            height='30'
+            src='/logos/github-icon.svg'
+            alt='external link icon'
+          />
+          <span class='sr-only'>Github Repository</span>
+        </Link>
+        <Link
+          className='p-inline-0'
+          url={project.demo}
+          target='_blank'
+        >
+          <img
+            width='30'
+            height='30'
+            src='/logos/link.svg'
+            alt='external link icon'
+          />
+          <span class='sr-only'>Demo</span>
+        </Link>
+      </div>
+    </div>
+    <p>{project.smallDescription[currentLocale]}</p>
+  </div>
+</article>
+
+<style>
+  .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+  }
+
+  article h2 {
+    font-size: 32px;
+    color: var(--just-white);
+  }
+
+  article p {
+    line-height: 1.5rem;
+  }
+
+  article .cover {
+    background-size: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-size: cover;
+    border-radius: 1rem;
+    overflow: hidden;
+    z-index: 2;
+    padding: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover .cover {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover .cover {
+      transform: scale(1.1);
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-image: linear-gradient(
+        rgba(0, 0, 0, 0) 30%,
+        rgba(23, 23, 24, 0.7),
+        rgba(23, 23, 24, 0.9)
+      );
+    }
+  }
+
+  .card-head {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card-links {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .card-content {
+    align-self: end;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  article:nth-child(4n + 1),
+  article:nth-child(4n + 4) {
+    grid-column: span 4;
+  }
+
+  article:nth-child(4n + 2),
+  article:nth-child(4n + 3) {
+    grid-column: span 6;
+  }
+</style>
