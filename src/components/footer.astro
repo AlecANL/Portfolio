@@ -1,0 +1,28 @@
+---
+import Wrapper from './wrapper.astro';
+const currentYear = new Date().getFullYear();
+---
+
+<footer>
+  <Wrapper>
+    <div>
+      <p>© {currentYear}, Hecho con ❤️ por Alexei</p>
+    </div>
+  </Wrapper>
+</footer>
+
+<style>
+  footer {
+    padding: 1.5rem 0;
+  }
+
+  div {
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.052);
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+  }
+</style>

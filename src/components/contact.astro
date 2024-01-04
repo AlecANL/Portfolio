@@ -1,0 +1,61 @@
+---
+import { SOCIAL_MEDIA } from '../const';
+import { getI18N } from '../i18n';
+import Link from './link.astro';
+import Wrapper from './wrapper.astro';
+
+const { currentLocale = 'en' } = Astro;
+
+const i18n = getI18N({
+  currentLocale,
+});
+---
+
+<article>
+  <Wrapper>
+    <div class='prefooter-content'>
+      <h1>{i18n.LABEL_CONTACT_SECTION}</h1>
+      <Link
+        radius='medium'
+        className='hero-btn max-w-2xl'
+        variant='secondary'
+        url={`mailto:${SOCIAL_MEDIA.MAIL}`}
+      >
+        <span> {i18n.LABEL_CONNECT_WITH_ME}</span>
+      </Link>
+    </div>
+  </Wrapper>
+</article>
+
+<style>
+  .prefooter-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  article {
+    position: relative;
+    padding-block: 150px;
+    background-image: url('/pattern/pattern.svg');
+    background-size: cover;
+    background-position: right;
+  }
+  article svg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -30%;
+    z-index: -1;
+  }
+
+  article h1 {
+    margin-inline: auto;
+    font-size: clamp(2.25rem, -0.5625rem + 9vw, 4.5rem);
+    max-width: 600px;
+    text-wrap: balance;
+    text-align: center;
+    color: var(--just-white);
+  }
+</style>

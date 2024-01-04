@@ -1,0 +1,131 @@
+---
+import type { Project } from '../models/types';
+import Link from './link.astro';
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+const { currentLocale = 'en' } = Astro;
+---
+
+<article>
+  <div class='cover'>
+    <div class='card-links'>
+      <Link
+        className='p-inline-0'
+        url={project.repository}
+        target='_blank'
+      >
+        <img
+          width='30'
+          height='30'
+          src='/logos/github-icon.svg'
+          alt='external link icon'
+        />
+        <span class='sr-only'>Github Repository</span>
+      </Link>
+      <Link
+        className='p-inline-0'
+        url={project.demo}
+        target='_blank'
+      >
+        <img
+          width='30'
+          height='30'
+          src='/logos/link.svg'
+          alt='external link icon'
+        />
+        <span class='sr-only'>Demo</span>
+      </Link>
+    </div>
+    <div class='backdrop'></div>
+    <div
+      class='image'
+      style={{
+        backgroundImage: `url(${project.image})`,
+        backgroundSize: 'cover',
+      }}
+    >
+    </div>
+  </div>
+
+  <div class='project-description'>
+    <h2>{project.name}</h2>
+    <p>{project.smallDescription[currentLocale]}</p>
+  </div>
+</article>
+
+<style>
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: #1d1d20;
+  }
+
+  .backdrop {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(27, 27, 27);
+    background: linear-gradient(
+      356deg,
+      rgba(27, 27, 27, 0.109) 0%,
+      rgba(0, 0, 0, 0.13) 35%,
+      rgba(8, 8, 8, 0.843) 100%
+    );
+  }
+
+  article:hover .image {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .card-links {
+    position: absolute;
+    display: flex;
+    right: 10px;
+    top: 10px;
+    z-index: 2;
+  }
+
+  .cover {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  article .image {
+    transition: transform 0.5s ease-in-out;
+  }
+
+  h2 {
+    color: var(--just-white);
+  }
+
+  .image {
+    width: 100%;
+    height: 220px;
+    border-radius: 1rem;
+  }
+
+  .project-description {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  .project-description p {
+    justify-self: flex-end;
+  }
+</style>

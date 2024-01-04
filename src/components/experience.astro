@@ -1,0 +1,44 @@
+---
+import { EXPERIENCE } from '../data/experience';
+import { getI18N } from '../i18n';
+import ExperienceCard from './experience-card.astro';
+import Wrapper from './wrapper.astro';
+
+const { currentLocale = 'en' } = Astro;
+
+const i18n = getI18N({
+  currentLocale,
+});
+---
+
+<section class='experiece-section'>
+  <Wrapper>
+    <div>
+      <h2>{i18n.LABEL_EXPERIENCE}</h2>
+
+      <div>
+        {EXPERIENCE.map((job) => <ExperienceCard job={job} />)}
+      </div>
+    </div>
+  </Wrapper>
+</section>
+
+<style>
+  .experiece-section {
+    @media (min-width: 768px) {
+      margin-block: 3.875rem 10.625rem;
+    }
+  }
+
+  h2 {
+    color: var(--just-white);
+    font-size: clamp(1.25rem, 0rem + 4vw, 2.25rem);
+    font-weight: 700;
+    line-height: 5.25rem;
+    margin-bottom: 2rem;
+
+    @media (min-width: 768px) {
+      margin-bottom: 5.125rem;
+    }
+  }
+</style>

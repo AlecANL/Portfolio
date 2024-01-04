@@ -1,0 +1,97 @@
+---
+type LinkVariants = 'primary' | 'secondary' | 'neutral' | 'third' | 'outline';
+
+interface Props {
+  variant?: LinkVariants;
+  url: string;
+  radius?: 'none' | 'small' | 'medium' | 'large';
+  className?: string;
+  target?: '_blank' | '_self' | '_parent' | '_top' | '';
+}
+
+const { variant = 'neutral', radius = 'none', className = '', target = '', url } = Astro.props;
+const variantClass = `link--${variant}`;
+const radiusClass = `link--radius-${radius}`;
+---
+
+<a
+  class:list={[variantClass, radiusClass, className]}
+  href={url}
+  target={target}
+>
+  <slot />
+</a>
+
+<style>
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 1.5rem;
+    color: var(--txt-color);
+  }
+
+  .link--third {
+    background-color: var(--portage);
+    color: var(--body-color);
+  }
+
+  .link--secondary {
+    background-color: var(--absolute-zero);
+    color: var(--just-white);
+  }
+  .link--outline {
+    border: 3px solid var(--absolute-zero);
+    background-color: transparent;
+    color: var(--baby-blue-eyes);
+  }
+
+  .link--radius-medium {
+    border-radius: 1rem;
+  }
+
+  .link--radius-large {
+    border-radius: 50px;
+  }
+
+  .hire-btn {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  .i18n-picker {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 4px;
+  }
+
+  .hero-social__link {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(195, 182, 182, 0.05);
+    gap: 12px;
+  }
+
+  .hero-btn {
+    padding: 0 28px;
+    min-height: 60px;
+    font-size: 20px;
+  }
+
+  .max-w-2xl {
+    @media (min-width: 400px) {
+      max-width: 256px;
+    }
+  }
+
+  .p-inline-0 {
+    padding-inline-start: 12px;
+    padding-inline-end: 12px;
+  }
+</style>

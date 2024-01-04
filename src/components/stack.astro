@@ -1,0 +1,99 @@
+---
+import Wrapper from './wrapper.astro';
+
+const STACK = [
+  {
+    name: 'React',
+    icon: '/tech/react.svg',
+  },
+  {
+    name: 'Angular',
+    icon: '/tech/angular-icon.svg',
+  },
+  {
+    name: 'TypeScript',
+    icon: '/tech/typescript-icon.svg',
+  },
+  {
+    name: 'JavaScript',
+    icon: '/tech/javascript.svg',
+  },
+  {
+    name: 'StoryBook',
+    icon: '/tech/storybook-icon.svg',
+  },
+];
+---
+
+<section>
+  <Wrapper>
+    <div>
+      <h3>Stack</h3>
+
+      <ul>
+        {
+          STACK.map(({ name, icon }) => (
+            <li>
+              <img
+                src={icon}
+                alt={`Icon of ${name}`}
+              />
+              <span>{name}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </Wrapper>
+</section>
+
+<style>
+  h3 {
+    line-height: 84px;
+    font-size: 36px;
+    color: var(--just-white);
+  }
+  section {
+    margin-block: 100px;
+
+    @media (min-width: 768px) {
+      margin-block: 150px;
+    }
+  }
+  ul {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  ul img {
+    width: 30px;
+    height: 30px;
+
+    @media (min-width: 768px) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  ul span {
+    color: var(--just-white);
+    font-size: clamp(1rem, 0.375rem + 2vw, 1.5rem);
+  }
+
+  ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 1.5rem;
+    gap: 1.5rem;
+    background-color: #201f23;
+    border-radius: 1rem;
+    border: 2px solid #201f23;
+
+    &:hover {
+      border-color: #008ab3;
+    }
+  }
+</style>

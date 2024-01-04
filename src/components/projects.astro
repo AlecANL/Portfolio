@@ -1,0 +1,56 @@
+---
+import { PROJECTS } from '../data/projects';
+import { getI18N } from '../i18n';
+import Wrapper from './wrapper.astro';
+import ProjectCard from './bento-project-card.astro';
+const { currentLocale = 'en' } = Astro;
+
+const featuredProjects = PROJECTS.filter((project) => project.average >= 10).slice(0, 4);
+
+const i18n = getI18N({
+  currentLocale,
+});
+---
+
+<section>
+  <Wrapper>
+    <div class='projects-content'>
+      <h3>{i18n.LABEL_FEATURED_PROJECTS}</h3>
+      <div class='bento-grid'>
+        {featuredProjects.map((project) => <ProjectCard project={project} />)}
+      </div>
+    </div>
+  </Wrapper>
+</section>
+
+<style>
+  section {
+    background-image: url('/images/wave-pattern.svg');
+  }
+
+  .projects-content {
+    padding: 2rem 0;
+
+    @media (min-widrt: 768px) {
+      padding: 64px 0;
+    }
+  }
+
+  .bento-grid {
+    display: grid;
+    grid-auto-rows: 30rem;
+    row-gap: 1.5rem;
+
+    @media (min-width: 900px) {
+      grid-template-columns: repeat(10, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+  }
+
+  h3 {
+    line-height: 84px;
+    font-size: clamp(1.25rem, 0rem + 4vw, 2.25rem);
+    margin-block: 52px;
+    color: var(--just-white);
+  }
+</style>

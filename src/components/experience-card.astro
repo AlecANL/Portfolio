@@ -1,0 +1,181 @@
+---
+import type { Job } from '../data/experience';
+
+interface Props {
+  job: Job;
+}
+
+const { currentLocale = 'en' } = Astro;
+const { job } = Astro.props;
+---
+
+<article class='job-card'>
+  <div class='timeline'>
+    <div class='timeline-icon'>
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        width='24'
+        height='24'
+        viewBox='0 0 32 33'
+        fill='none'
+      >
+        <g clip-path='url(#clip0_807_1764)'>
+          <path
+            d='M2.28571 17.1095C2.28571 12.0812 2.28571 9.56707 3.8478 8.00496C5.40991 6.44287 7.92405 6.44287 12.9524 6.44287H18.2857C23.314 6.44287 25.8282 6.44287 27.3902 8.00496C28.9524 9.56707 28.9524 12.0812 28.9524 17.1095V19.7762C28.9524 24.8045 28.9524 27.3187 27.3902 28.8807C25.8282 30.4429 23.314 30.4429 18.2857 30.4429H12.9524C7.92405 30.4429 5.40991 30.4429 3.8478 28.8807C2.28571 27.3187 2.28571 24.8045 2.28571 19.7762V17.1095Z'
+            stroke='#828287'
+            stroke-width='4'
+          ></path>
+          <path
+            d='M9.33331 5.83334V3.83334'
+            stroke='#828287'
+            stroke-width='4'
+            stroke-linecap='round'
+          ></path>
+          <path
+            d='M22.6667 5.83334V3.83334'
+            stroke='#828287'
+            stroke-width='4'
+            stroke-linecap='round'
+          ></path>
+          <path
+            d='M3.33331 12.5H28.6666'
+            stroke='#828287'
+            stroke-width='4'
+            stroke-linecap='round'
+          ></path>
+        </g>
+        <defs>
+          <clipPath id='clip0_807_1764'>
+            <rect
+              width='32'
+              height='32'
+              fill='white'
+              transform='translate(0 0.5)'
+            ></rect>
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+    <div class='line'></div>
+  </div>
+  <div class='job-description'>
+    <span class='date'> {job.period}</span>
+    <h3 class='location'>{job.work} . {job.company}</h3>
+    <span class='position'> {job.position}</span>
+    {job.description[currentLocale].map((paragraph) => <p>{paragraph}</p>)}
+    <div class='job-stack'>
+      {
+        job.stack.map((tech) => (
+          <div>
+            <img
+              src={`/tech/${tech.icon}.svg`}
+              alt={`${tech.name} icon`}
+            />
+            <span>{tech.name}</span>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</article>
+<style>
+  .job-description {
+    padding-bottom: 3rem;
+  }
+
+  .timeline {
+    display: none;
+    justify-content: center;
+    position: relative;
+    min-width: 4rem;
+
+    @media (min-width: 48rem) {
+      display: flex;
+    }
+  }
+
+  .timeline-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 12;
+    width: 3.375rem;
+    height: 3.375rem;
+    border-radius: 3.125rem;
+    border: 0.0625rem solid rgba(255, 255, 255, 0.1);
+    background-color: #141414;
+  }
+
+  .timeline .line {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 0.125rem dotted var(--just-white);
+  }
+
+  .date {
+    display: inline-block;
+    font-size: 1.125rem;
+    margin-block: 1.25rem 2.5rem;
+    color: var(--just-grey);
+  }
+
+  .location {
+    color: var(--just-white);
+    font-size: 1.625rem;
+    font-weight: 700;
+  }
+
+  .position {
+    font-size: 1.125rem;
+    display: inline-block;
+    margin-top: 0.3125rem;
+    color: var(--pale-cornflower-blue);
+  }
+
+  .job-card {
+    max-width: 50rem;
+    display: flex;
+    gap: 32px;
+  }
+
+  .job-stack {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    font-size: 12px;
+    gap: 1rem;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (min-width: 48rem) {
+      font-size: 1rem;
+      gap: 24px;
+
+      img {
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
+
+  .job-stack > div {
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 3.125rem;
+    border: 0.0625rem solid rgba(255, 255, 255, 0.1);
+    background: rgba(195, 182, 182, 0.05);
+
+    @media (min-width: 48rem) {
+      padding: 0.5rem 24px;
+    }
+  }
+</style>

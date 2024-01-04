@@ -1,0 +1,92 @@
+---
+import Wrapper from '../components/wrapper.astro';
+import Layout from '../layouts/Layout.astro';
+import { PROJECTS } from '../data/projects';
+import { getI18N } from '../i18n';
+import ProjectCard from './project-card.astro';
+
+const { currentLocale = 'en' } = Astro;
+
+const i18n = getI18N({
+  currentLocale,
+});
+---
+
+<Layout title='Projects'>
+  <Wrapper>
+    <div class='hero'>
+      <div>
+        <h1>{i18n.LABEL_MY_WORK}</h1>
+        <p class='intro'>{i18n.TEXT_PROJECTS_PAGE}</p>
+      </div>
+      <img
+        class='js-illustration'
+        src='/illustration/javascript_illustration.svg'
+        alt='javascript illustration'
+      />
+    </div>
+  </Wrapper>
+
+  <main>
+    <Wrapper>
+      <hr />
+
+      <div class='grid'>
+        {PROJECTS.map((project) => <ProjectCard project={project} />)}
+      </div>
+    </Wrapper>
+  </main>
+</Layout>
+
+<style>
+  .intro {
+    font-size: 20px;
+    max-width: 700px;
+    text-wrap: balance;
+    color: var(--just-white);
+  }
+
+  h1 {
+    color: var(--baby-blue-eyes);
+    align-self: flex-end;
+  }
+
+  .js-illustration {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-block: 100px;
+
+    @media (min-width: 400px) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+
+  .hero {
+    text-align: center;
+    display: flex;
+    gap: 2rem;
+    margin-top: 4rem;
+
+    img {
+      width: 450px;
+    }
+
+    @media (min-width: 768px) {
+      text-align: start;
+    }
+  }
+
+  hr {
+    border-color: rgba(255, 255, 255, 0.052);
+    margin-top: 4rem;
+  }
+</style>
