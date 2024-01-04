@@ -11,7 +11,7 @@ export const PROJECTS = [
             es: "Imagina construir un tablero de trabajos atractivo desde cero. Esa es la esencia de este desafío. Utilizando datos locales del archivo data.json, el objetivo es dar vida a un diseño elegante...",
             en: "Imagine building an attractive job board from scratch. That's the essence of this challenge. Using local data from the data.json file, the goal is to bring to life an elegant design..."
         },
-        image: '/projects/devjobs-cover.png',
+        image: '/projects/devjobs-cover.webp',
         stack: [],
         repository: "https://github.com/AlecANL/devjobs-v1",
         demo: "https://devjobs-v1.vercel.app/"
@@ -28,10 +28,10 @@ export const PROJECTS = [
             es: "El proyecto consiste en desarrollar una aplicación de reloj que utilice APIs como World Time, IP Geolocation y Quotes para obtener datos en tiempo real...",
             en: "The project consists of developing a clock application that uses APIs such as World Time, IP Geolocation and Quotes to obtain real-time data..."
         },
-        image: '/projects/clock-cover.png',
+        image: '/projects/clock-cover.webp',
         stack: [],
         repository: "https://github.com/AlecANL/clock-app",
-        demo: "https://clock-app-alecanl.vercel.app/"
+        demo: "https://clock-app-v1.vercel.app/"
     },
     {
         id: 1,
@@ -45,7 +45,7 @@ export const PROJECTS = [
             es: "Este proyecto implica la creación de una aplicación de temporizador Pomodoro que sigue un diseño específico. La aplicación permite iniciar tres tipos de temporizadores, cambiar la apariencia visual, pausar, iniciar y reiniciar el temporizador, y personalizar cada uno de los temporizadores...",
             en: "This project involves creating a Pomodoro timer application that follows a specific design. The application allows you to start three types of timers, change the visual appearance, pause, start and restart the timer, and customize each of the timers...."
         },
-        image: '/projects/pomodoro-cover.png',
+        image: '/projects/pomodoro-cover.webp',
         stack: [],
         repository: "https://github.com/AlecANL/pomodoro-v1",
         demo: "https://pomodoro-v1.vercel.app/"
@@ -62,7 +62,7 @@ export const PROJECTS = [
             es: "Este proyecto implica la creación de una aplicación que utiliza la API de GitHub para mostrar perfiles de usuarios. Los usuarios podrán explorar perfiles, realizar búsquedas por nombre de usuario, y cambiar entre temas claro y oscuro....",
             en: "This project involves creating an application that uses the GitHub API to display user profiles. Users will be able to explore profiles, search by username, and switch between light and dark themes..."
         },
-        image: '/projects/devfinder-cover.png',
+        image: '/projects/devfinder-cover.webp',
         stack: [],
         repository: "https://github.com/AlecANL/devfinder",
         demo: "https://devfinder-v1.netlify.app/"
