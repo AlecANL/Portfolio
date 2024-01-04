@@ -1,13 +1,16 @@
 ---
+import type { Menu, Language } from '../models/types';
 import menu from '../data/menu.json';
 const currentPath = Astro.url.pathname;
 const { currentLocale = 'en' } = Astro;
+
+const getName = (item: Menu) => item[currentLocale as Language].name;
 ---
 
 <nav>
   <ul>
     {
-      menu.map((item) => {
+      menu.map((item: Menu) => {
         const isActiveRoute = currentPath === item.url[currentLocale];
         return (
           <li class:list={[isActiveRoute && 'active']}>
@@ -15,7 +18,7 @@ const { currentLocale = 'en' } = Astro;
               href={item.url[currentLocale]}
               target={item.target}
             >
-              <span>{item[currentLocale].name}</span>
+              <span>{getName(item)}</span>
               {!isActiveRoute ? (
                 <svg
                   stroke='currentColor'
@@ -58,7 +61,6 @@ const { currentLocale = 'en' } = Astro;
     left: 0;
     right: 0;
     z-index: 0;
-    /* padding: 40px 140px; */
     padding: 40px 40px;
 
     @media (min-width: 768px) {

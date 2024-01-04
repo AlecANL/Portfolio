@@ -1,6 +1,7 @@
 ---
 import { PROJECTS_URL, SOCIAL_MEDIA } from '../const';
 import { getI18N } from '../i18n';
+import type { DescriptionLanguage } from '../models/types';
 import Link from './link.astro';
 import Poster from './poster.astro';
 import Wrapper from './wrapper.astro';
@@ -10,7 +11,7 @@ const i18n = getI18N({
   currentLocale,
 });
 
-const URL_PROJECTS_PAGE = PROJECTS_URL[currentLocale];
+const URL_PROJECTS_PAGE = (PROJECTS_URL as DescriptionLanguage)[currentLocale];
 ---
 
 <section>

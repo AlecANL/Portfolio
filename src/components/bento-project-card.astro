@@ -1,18 +1,8 @@
 ---
+import type { Project } from '../models/types';
+
 interface Props {
-  project: {
-    name: string;
-    image: string;
-    repository: string;
-    demo: string;
-    smallDescription: {
-      [key: string]: string;
-    };
-    description: {
-      en: string;
-      es: string;
-    };
-  };
+  project: Project;
 }
 
 import Link from './link.astro';

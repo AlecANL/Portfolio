@@ -1,8 +1,9 @@
 ---
 import { HOME_URL } from '../const';
+import type { DescriptionLanguage } from '../models/types';
 
 const { currentLocale = 'en' } = Astro;
-const HOME = HOME_URL[currentLocale];
+const HOME = (HOME_URL as DescriptionLanguage)[currentLocale];
 ---
 
 <a

@@ -2,8 +2,8 @@
 import Wrapper from '../components/wrapper.astro';
 import Layout from '../layouts/Layout.astro';
 import { PROJECTS } from '../data/projects';
-import Link from '../components/link.astro';
 import { getI18N } from '../i18n';
+import ProjectCard from './project-card.astro';
 
 const { currentLocale = 'en' } = Astro;
 
@@ -32,55 +32,7 @@ const i18n = getI18N({
       <hr />
 
       <div class='grid'>
-        {
-          PROJECTS.map((project) => (
-            <article>
-              <div class='cover'>
-                <div class='card-links'>
-                  <Link
-                    className='p-inline-0'
-                    url={project.repository}
-                    target='_blank'
-                  >
-                    <img
-                      width='30'
-                      height='30'
-                      src='/logos/github-icon.svg'
-                      alt='external link icon'
-                    />
-                    <span class='sr-only'>Github Repository</span>
-                  </Link>
-                  <Link
-                    className='p-inline-0'
-                    url={project.demo}
-                    target='_blank'
-                  >
-                    <img
-                      width='30'
-                      height='30'
-                      src='/logos/link.svg'
-                      alt='external link icon'
-                    />
-                    <span class='sr-only'>Demo</span>
-                  </Link>
-                </div>
-                <div class='backdrop' />
-                <div
-                  class='image'
-                  style={{
-                    backgroundImage: `url(${project.image})`,
-                    backgroundSize: 'cover',
-                  }}
-                />
-              </div>
-
-              <div class='project-description'>
-                <h2>{project.name}</h2>
-                <p> {project.smallDescription[currentLocale]} </p>
-              </div>
-            </article>
-          ))
-        }
+        {PROJECTS.map((project) => <ProjectCard project={project} />)}
       </div>
     </Wrapper>
   </main>
@@ -99,11 +51,6 @@ const i18n = getI18N({
     align-self: flex-end;
   }
 
-  article:hover .image {
-    transform: scale(1.1);
-    transition: transform 0.5s ease-in-out;
-  }
-
   .js-illustration {
     display: none;
 
@@ -112,55 +59,6 @@ const i18n = getI18N({
     }
   }
 
-  .card-links {
-    position: absolute;
-    display: flex;
-    right: 10px;
-    top: 10px;
-    z-index: 2;
-  }
-
-  .cover {
-    position: relative;
-    border-radius: 1rem;
-    overflow: hidden;
-  }
-
-  article .image {
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .backdrop {
-    position: absolute;
-    z-index: 1;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(27, 27, 27);
-    background: linear-gradient(
-      356deg,
-      rgba(27, 27, 27, 0.109) 0%,
-      rgba(0, 0, 0, 0.13) 35%,
-      rgba(8, 8, 8, 0.843) 100%
-    );
-  }
-
-  article {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    background-color: #1d1d20;
-  }
-
-  img {
-    max-width: 100%;
-    height: 100%;
-    transition: transform 0.5s ease-in-out;
-  }
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -170,28 +68,6 @@ const i18n = getI18N({
     @media (min-width: 400px) {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
-  }
-
-  h3 {
-    color: var(--just-white);
-  }
-
-  .image {
-    width: 100%;
-    height: 220px;
-    border-radius: 1rem;
-  }
-
-  .project-description {
-    margin-top: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
-  }
-
-  .project-description p {
-    justify-self: flex-end;
   }
 
   .hero {
