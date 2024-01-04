@@ -48,3 +48,21 @@ export const PROJECTS_URL = {
     en: '/projects',
     es: '/es/projects'
 }
+
+export const SEO_HOME = {
+    TITLE: 'HOME',
+    DESCRIPTION: 'build a creative solutions for a variety of challenges and needs. Focused on the creation of digital products that inspire and engage people.',
+    KEYWORDS: '',
+    COVER: 'https://github.com/AlecANL/portfolio/blob/feature/branding-2024/public/images/home-cover.png?raw=true',
+    URL: 'https://portfolio-bz5p4upfi-alecanl.vercel.app/',
+    URL_TW: 'portfolio-bz5p4upfi-alecanl.vercel.app/',
+}
+
+export const SEO_PROJECTS = {
+    TITLE: 'PROJECTS',
+    DESCRIPTION: 'Following projects showcases my skills and experience through personal projects. Each project it reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.',
+    KEYWORDS: '',
+    COVER: '',
+    URL: 'https://portfolio-bz5p4upfi-alecanl.vercel.app/projects',
+    URL_TW: 'portfolio-bz5p4upfi-alecanl.vercel.app/projects',
+}
