@@ -58,13 +58,3 @@ const i18n = getI18N({
     gap: 12px;
   }
 </style>
-
-<script>
-  const $button = document.querySelector('button') as HTMLButtonElement;
-  const $nav = document.querySelector('nav') as HTMLElement;
-
-  $button.addEventListener('click', () => {
-    $button.classList.toggle('menu-open');
-    $nav.classList.toggle('show-nav');
-  });
-</script>
