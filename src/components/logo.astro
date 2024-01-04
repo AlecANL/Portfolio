@@ -1,5 +1,12 @@
+---
+import { HOME_URL } from '../const';
+
+const { currentLocale = 'en' } = Astro;
+const HOME = HOME_URL[currentLocale];
+---
+
 <a
-  href='/'
+  href={HOME}
   title='home'
   aria-label='Home'
 >

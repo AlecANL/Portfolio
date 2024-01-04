@@ -1,5 +1,5 @@
 ---
-import { SOCIAL_MEDIA } from '../const';
+import { PROJECTS_URL, SOCIAL_MEDIA } from '../const';
 import { getI18N } from '../i18n';
 import Link from './link.astro';
 import Poster from './poster.astro';
@@ -9,6 +9,8 @@ const { currentLocale = 'en' } = Astro;
 const i18n = getI18N({
   currentLocale,
 });
+
+const URL_PROJECTS_PAGE = PROJECTS_URL[currentLocale];
 ---
 
 <section>
@@ -98,7 +100,7 @@ const i18n = getI18N({
           <Link
             radius='medium'
             className='hero-btn max-w-2xl'
-            url='/projects'
+            url={URL_PROJECTS_PAGE}
             variant='outline'
           >
             {i18n.LABEL_MY_WORK}
@@ -170,6 +172,7 @@ const i18n = getI18N({
 
     @media (min-width: 768px) {
       justify-content: space-between;
+      padding: 100px 0;
       align-items: center;
     }
 

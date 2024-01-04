@@ -59,9 +59,9 @@ const { job } = Astro.props;
     <div class='line'></div>
   </div>
   <div class='job-description'>
-    <span class='date'>2023 - Present</span>
-    <h3 class='location'>Frontend . ByteSW</h3>
-    <span class='position'>Frontend Developer Junior</span>
+    <span class='date'> {job.period}</span>
+    <h3 class='location'>{job.work} . {job.company}</h3>
+    <span class='position'> {job.position}</span>
     {job.description[currentLocale].map((paragraph) => <p>{paragraph}</p>)}
     <div class='job-stack'>
       {

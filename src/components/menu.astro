@@ -8,11 +8,11 @@ const { currentLocale = 'en' } = Astro;
   <ul>
     {
       menu.map((item) => {
-        const isActiveRoute = currentPath === item.url;
+        const isActiveRoute = currentPath === item.url[currentLocale];
         return (
           <li class:list={[isActiveRoute && 'active']}>
             <a
-              href={item.url}
+              href={item.url[currentLocale]}
               target={item.target}
             >
               <span>{item[currentLocale].name}</span>

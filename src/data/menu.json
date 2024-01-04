@@ -1,6 +1,9 @@
 [
     {
-        "url": "/",
+        "url": {
+            "es": "/es",
+            "en": "/"
+        },
         "es": {
             "name": "Inicio"
         },
@@ -10,7 +13,10 @@
         "target": ""
     },
     {
-        "url": "/projects",
+        "url": {
+            "es": "/es/projects",
+            "en": "/projects"
+        },
         "es": {
             "name": "Proyectos"
         },
@@ -20,7 +26,10 @@
         "target": ""
     },
     {
-        "url": "/cv",
+        "url": {
+            "es": "https://drive.google.com/file/d/1mbmGRfmxEjSfQNiJSf0yWSc8s6q_fvu-/view?usp=sharing",
+            "en": "https://drive.google.com/file/d/1mbmGRfmxEjSfQNiJSf0yWSc8s6q_fvu-/view?usp=sharing"
+        },
         "es": {
             "name": "CV"
         },

@@ -15,10 +15,10 @@ export interface Job {
 export const EXPERIENCE = [
     {
         id: 1,
-        period: '2019 - Present',
-        company: 'Cognizant',
+        period: '2022 - Present',
+        company: 'ByteSW',
         work: 'Fronted',
-        position: 'Software Engineer',
+        position: 'Frontend Developer Junior',
         description: {
             es: [
                 'Desarrollo y mantenimiento de nuevos módulos dentro de la aplicación, incluyendo la creación y gestión de pruebas unitarias.',

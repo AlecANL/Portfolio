@@ -36,4 +36,15 @@ export const SOCIAL_MEDIA = {
     GITHUB: 'https://github.com/AlecANL',
     LINKEDIN: 'https://www.linkedin.com/in/brandon-alexei/',
     MAIL: 'alexeialvarez4@gmail.com',
+    RESUME: 'https://drive.google.com/file/d/1mbmGRfmxEjSfQNiJSf0yWSc8s6q_fvu-/view?usp=sharing'
+}
+
+export const HOME_URL = {
+    en: '/',
+    es: '/es'
+}
+
+export const PROJECTS_URL = {
+    en: '/projects',
+    es: '/es/projects'
 }
