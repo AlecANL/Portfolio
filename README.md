@@ -14,8 +14,8 @@
 
 ### Links
 
-- Repository URL: [repo](https://github.com/AlecANL/pomodoro-v1)
-- Live Site URL: [live demo](https://pomodoro-v1.vercel.app)
+- Repository URL: [repo](https://github.com/AlecANL/portfolio)
+- Live Site URL: [live demo](https://www.alec-anl.me/)
 
 ### Built with
 
