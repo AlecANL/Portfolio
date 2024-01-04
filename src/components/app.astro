@@ -1,4 +1,5 @@
 ---
+import { SEO_HOME } from '../const';
 import Layout from '../layouts/Layout.astro';
 import Contact from './contact.astro';
 import Experience from './experience.astro';
@@ -7,7 +8,13 @@ import Projects from './projects.astro';
 import Stack from './stack.astro';
 ---
 
-<Layout title='Home'>
+<Layout
+  title={SEO_HOME.TITLE}
+  description={SEO_HOME.DESCRIPTION}
+  demo={SEO_HOME.URL}
+  screenshot={SEO_HOME.COVER}
+  twDemo={SEO_HOME.URL_TW}
+>
   <Hero />
   <Experience />
   <Projects />
